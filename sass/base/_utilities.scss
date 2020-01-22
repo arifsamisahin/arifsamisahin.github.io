@@ -1,0 +1,20 @@
+.mb {
+  &-md {
+    margin-bottom: $default-space-md;
+  }
+  &-sm {
+    margin-bottom: $default-space-sm;
+  }
+}
+
+.mt {
+  &-sm {
+    margin-top: $default-space-sm;
+  }
+}
+
+.pl {
+  &-md {
+    padding-left: $default-space-md;
+  }
+}

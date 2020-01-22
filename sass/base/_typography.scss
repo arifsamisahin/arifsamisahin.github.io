@@ -1,0 +1,133 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: $color-grey-dark-2;
+  font-size: 1.5rem;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+
+.paragraph {
+  margin-bottom: $default-space-sm;
+}
+
+a {
+  &:link {
+    color: $color-primary;
+  }
+  &:visited {
+    color: $color-primary-dark;
+  }
+}
+
+.link {
+  &:link,
+  &:visited,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.list {
+  list-style-position: inside;
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+
+  &__item {
+    margin-bottom: $default-space-sm;
+    line-height: 1.5;
+    border-radius: $default-radius;
+    transition: all 0.1s;
+    &:hover {
+      color: $color-black;
+      background-color: rgba($color-white, 1);
+      transform: scale(1.05);
+    }
+
+    &--info,
+    &--description {
+      font-size: 1.2rem;
+      font-family: "Ubuntu", sans-serif;
+      color: $color-grey-dark-1;
+    }
+    &--info {
+      &::before {
+        content: "- ";
+      }
+    }
+
+    &--description {
+      display: block;
+      text-indent: 1rem;
+      &::before {
+        content: "* ";
+      }
+    }
+
+    & > .im {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.im {
+  padding-right: 0.6rem;
+}
+
+.iconify {
+  width: 4rem;
+  height: 4rem;
+}
+
+.heading-primary {
+  font-weight: 500;
+}
+
+.heading-secondary {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  &,
+  & > .im {
+    line-height: 1.7;
+    display: inline-block;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, $color-primary-dark, $color-primary, $color-primary-dark);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: skewX(10deg) skewY(2deg) scale(1.1);
+    }
+  }
+}
+
+.heading-tertiary {
+  line-height: 1.7;
+}
+
+.list--exp {
+  &__item {
+    display: block;
+  }
+}
+
+@media print {
+  .heading-secondary {
+    &,
+    & > .im {
+      background-image: none;
+      color: $color-primary-dark;
+    }
+  }
+
+  .container {
+    margin: 0 4rem !important;
+  }
+}

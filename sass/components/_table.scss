@@ -1,0 +1,17 @@
+.table {
+  text-align: left;
+
+  & tr {
+    height: 2.4rem;
+    &:nth-child(odd) {
+      background-color: $color-grey-light-1;
+    }
+    &:hover {
+      background-color: $color-grey-light-2;
+    }
+  }
+  & td,
+  th {
+    padding: 0.5rem;
+  }
+}
