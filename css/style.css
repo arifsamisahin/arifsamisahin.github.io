@@ -50,7 +50,8 @@ body {
   /* Standard syntax */ }
 
 .paragraph {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  line-height: 2rem; }
 
 a:link {
   color: #00b4db; }
