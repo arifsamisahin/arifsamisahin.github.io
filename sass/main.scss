@@ -1,47 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
-
-@import "abstracts/mixins";
-@import "abstracts/variables";
-
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/table";
-
-@import "layout/flex";
-@import "layout/grid";
-@import "layout/footer";
-@import "layout/wave";
-@import "layout/background";
-
-@import "pages/home";
-
-@media only screen and (max-width: 500px) {
-  .wave-wrapper {
-    height: 37rem;
-  }
-  [class^="col-"] {
-    margin-right: 0;
-    width: 100%;
-  }
-}
-
-@media print {
-  body {
-    font-size: 120%;
-  }
-  .container {
-    margin-bottom: 100pt;
-  }
-
-  .icon-flag--container {
-    display: none;
-  }
-}
-@page {
-  margin: 1cm 0;
-}
+@import 'fonts';
+@import 'base';
+@import 'common';
+@import 'flexbox';
+@import 'layout';
+@import 'components/waves';
+@import 'components/timeline';
+@import 'components/cube';

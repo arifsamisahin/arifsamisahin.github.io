@@ -1,18 +1,25 @@
 {
-  "name": "arif-sami-sahin-wisimple",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "uglify": "uglifycss css/style.css > css/style.min.css"
-  },
-  "keywords": [],
-  "author": "Arif Sami SAHIN",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.14.1",
-    "uglifycss": "0.0.29"
-  },
-  "dependencies": {}
+    "name": "resume-new",
+    "version": "1.0.0",
+    "description": "Arif Sami SAHIN",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node-sass sass/main.scss css/main.css -w",
+        "compile:sass": "node-sass sass/main.scss css/main.compiled.css",
+        "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.compiled.css -o css/main.prefixed.css",
+        "compress:css": "node-sass css/main.prefixed.css css/main.css --output-style compressed",
+        "build": "npm-run-all compile:sass prefix:css compress:css"
+    },
+    "keywords": [],
+    "author": "wisimple",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.1.0",
+        "node-sass": "^5.0.0",
+        "postcss": "^8.2.1",
+        "postcss-cli": "^8.3.1"
+    },
+    "dependencies": {
+        "npm-run-all": "^4.1.5"
+    }
 }

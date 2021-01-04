@@ -1,0 +1,13 @@
+a.link--non-styled {
+  &:link,
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+ul.list--non-styled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

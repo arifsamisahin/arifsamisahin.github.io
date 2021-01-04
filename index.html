@@ -2,27 +2,263 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Arif Sami ŞAHİN - cv[en]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arif Sami ŞAHİN - Resume</title>
+    <meta name="description" content="Front-end developer" />
     <meta name="theme-color" content="#0083b0" />
     <meta name="content-language" content="en" />
     <meta name="author" content="Arif Sami ŞAHİN" />
     <meta name="msapplication-navbutton-color" content="#0083b0" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#0083b0" />
-    <link rel="shortcut icon" href="./img/logo-square.png" />
-    <link rel="apple-touch-icon" href="./img/logo-square.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <link rel="shortcut icon" href="assets/img/logo-square.png" />
+    <link rel="apple-touch-icon" href="assets/img/logo-square.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lujVj9_mf.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lujVj9_mf.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lujVj9_mf.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lujVj9_mf.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lujVj9_mf.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lujVj9_mf.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* greek-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+      /* greek */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRdu3cOWxy40.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu3cOWxw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Saira Semi Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sairasemicondensed/v6/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXenSvMeiXnV61by63Q.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Saira Semi Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sairasemicondensed/v6/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXenSvMfiXnV61by63Q.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Saira Semi Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sairasemicondensed/v6/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXenSvMRiXnV61by.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: 'Saira Semi Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sairasemicondensed/v6/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXf_S_MeiXnV61by63Q.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Saira Semi Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sairasemicondensed/v6/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXf_S_MfiXnV61by63Q.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Saira Semi Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/sairasemicondensed/v6/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXf_S_MRiXnV61by.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156693608-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -30,422 +266,208 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-
       gtag('config', 'UA-156693608-1');
     </script>
   </head>
-  <body id="page">
-    <span class="icon-flag--container">
-      <a href="/tr.html"><img src="./img/flags/tr.png" alt="Turkish" class="icon-flag" /></a>
-      <a href="/"><img src="./img/flags/en.png" alt="English" class="icon-flag" /></a>
-    </span>
-    <header class="header">
-      <div class="wave-wrapper wave--animate">
-        <div class="wave__content">
-          <div class="container">
-            <div class="flex flex--space-between flex--vertical-center">
-              <div class="item mt-sm">
-                <div class="profile__info pl-md">
-                  <ul class="list">
-                    <li class="list__item">
-                      <i class="im im-github"></i
-                      ><a class="link" href="https://github.com/wisimple" target="_blank"
-                        >/wisimple</a
-                      >
-                    </li>
-                    <li class="list__item">
-                      <i class="im im-mail"></i
-                      ><a href="mailto:arifsamisahin@gmail.com" class="link"
-                        >arifsamisahin@gmail.com</a
-                      >
-                    </li>
-                    <li class="list__item">
-                      <i class="im im-phone"></i
-                      ><a href="tel:+905453251571" class="link">+90 545 325 15 71</a>
-                    </li>
-                    <li class="list__item"><i class="im im-location"></i>Kayseri/TURKEY</li>
-                  </ul>
-                  <h1 class="heading-primary profile__info--name">Arif Sami ŞAHİN</h1>
+  <body>
+    <div class="waves-container">
+      <div class="wave-container wave-container--bottom">
+        <div class="wave wave--bottom"></div>
+      </div>
+      <div class="wave-container wave-container--middle">
+        <div class="wave wave--middle"></div>
+      </div>
+      <div class="wave-container wave-container--top">
+        <div class="wave wave--top"></div>
+      </div>
+      <div class="waves-container__content">
+        <div class="container">
+          <header class="header">
+            <div class="header__info-left">
+              <h1>Arif Sami ŞAHİN</h1>
+              <ul class="header__list">
+                <li>
+                  <a href="mailto:arifsamisahin@gmail.com" class="link--non-styled"><img src="assets/svg/icon-email.svg" alt="Email Svg" /> arifsamisahin@gmail.com </a>
+                </li>
+                <li>
+                  <a href="https://github.com/wisimple" rel="noopener" target="_blank" class="link--non-styled"><img src="assets/svg/icon-github.svg" alt="Github Svg" /> /wisimple </a>
+                </li>
+              </ul>
+            </div>
+            <div class="profile-picture-container">
+              <img src="assets/img/profile.jpg" alt="Profile" height="140px" width="auto" />
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="section section__cover-letter">
+        <p>I'm a software developer specializing in front-end. Mostly I have worked as a full-stack developer during my career. I love to learn and cycling.</p>
+      </section>
+
+      <section class="section section__experiences">
+        <h2>
+          <span class="iconify" data-icon="icomoon-free:briefcase" data-inline="false"></span>
+          Professional History
+        </h2>
+        <div class="row">
+          <div class="col-8">
+            <ul class="timeline">
+              <li class="timeline-item" data-date="Current">
+                <span>Full-stack developer</span>
+                <h4>Freelancer</h4>
+                <p>I have been developing web apps for my clients.</p>
+              </li>
+              <li class="timeline-item" data-date="Sep 2018">
+                <span>Full-stack developer</span>
+                <h4>ArgeRf Electronics Automation, Software & Defense</h4>
+                <p>I have mainly work on web and mobile apps which control IOT devices.</p>
+              </li>
+              <li class="timeline-item" data-date="Jan 2017">
+                <span>PHP Developer</span>
+                <h4>ELA - English Language Activities Kayseri</h4>
+                <p>I have developed Educational Institution Management System with LAMP stack.</p>
+              </li>
+              <li class="timeline-item" data-date="Oct 2016">
+                <span>Intern</span>
+                <h4>Eria Technology</h4>
+                <p>I have done software's end-user tests and supported customers, also learned HTML & CSS.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 f-center">
+            <div class="cube-container">
+              <div class="cube">
+                <div class="cube__face cube__face--front">
+                  <img src="assets/svg/html.svg" alt="CSS" />
                 </div>
-              </div>
-              <div class="item mt-sm">
-                <div class="profile__image-box">
-                  <img src="./img/wisimple.jpg" alt="Profil" class="profile__image" />
+                <div class="cube__face cube__face--back">
+                  <img src="assets/svg/javascript.svg" alt="Javascript" />
                 </div>
+                <div class="cube__face cube__face--right">
+                  <img src="assets/svg/css.svg" alt="CSS" />
+                </div>
+                <div class="cube__face cube__face--left">
+                  <img src="assets/svg/typescript.svg" alt="Typescript" />
+                </div>
+                <div class="cube__face cube__face--top">
+                  <img src="assets/svg/reactjs.svg" alt="Reactjs" />
+                </div>
+                <div class="cube__face cube__face--bottom"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="wave-wrapper__inner wave-wrapper__inner--bg-top">
-          <div class="wave wave--top"></div>
-        </div>
-        <div class="wave-wrapper__inner wave-wrapper__inner--bg-middle">
-          <div class="wave wave--middle"></div>
-        </div>
-        <div class="wave-wrapper__inner wave-wrapper__inner--bg-bottom">
+      </section>
+
+      <section class="section section__education">
+        <h2><span class="iconify" data-icon="mdi:school" data-inline="false"></span> Education</h2>
+        <ul class="timeline">
+          <li class="timeline-item" data-date="2020">
+            <span>Computer Engineering</span>
+            <h4>Erciyes University</h4>
+          </li>
+          <li class="timeline-item" data-date="2015">
+            <span>Computer Science</span>
+            <h4>AGH University of Science</h4>
+            <small>As an Erasmus Student</small>
+          </li>
+          <li class="timeline-item" data-date="2012">
+            <span>PHP Developer</span>
+            <h4>Yavuz Sultan Selim High School</h4>
+          </li>
+        </ul>
+      </section>
+      <section class="section section__side-projects"></section>
+    </main>
+
+    <footer class="footer">
+      <div class="waves-container waves-container--footer">
+        <div class="wave-container wave-container--bottom">
           <div class="wave wave--bottom"></div>
         </div>
+        <div class="waves-container__content">
+          <img src="assets/img/logo-square.png" alt="wisimple logo" class="footer-logo" height="30px" width="30px" />
+        </div>
       </div>
-    </header>
-    <main class="main container">
-      <section class="section">
-        <h2 style="display: none">Frameworks</h2>
-        <div class="flex flex--space-around icon-frameworks">
-          <div class="item">
-            <span class="iconify" data-icon="logos:typescript-icon" data-inline="false"></span>
-          </div>
-          <div class="item">
-            <span class="iconify" data-icon="logos:nodejs" data-inline="false"></span>
-          </div>
-          <div class="item">
-            <span class="iconify" data-icon="logos:react" data-inline="false"></span>
-          </div>
-          <div class="item">
-            <span class="iconify" data-icon="logos:sass" data-inline="false"></span>
-          </div>
-          <div class="item">
-            <span class="iconify" data-icon="logos:php" data-inline="false"></span>
-          </div>
-          <div class="item">
-            <span class="iconify" data-icon="logos:laravel" data-inline="false"></span>
-          </div>
-        </div>
-      </section>
-      <div class="section section-summary">
-        <h2 class="heading-secondary"><i class="im im-target"></i>SUMMARY</h2>
-        <p class="paragraph">
-          I have been working as a full-stack developer for about 3 years. During my career I
-          have mainly worked with Javascript. I have a personality that is creative, open to new
-          ideas and innovations, able to find practical solutions for problems, can take
-          responsibilities and love to learn.
-        </p>
-      </div>
-      <section class="section section-skills">
-        <h2 class="heading-secondary"><i class="im im-pulse"></i>SKILLS</h2>
-
-        <div class="paragraph">
-          I believe that the skills of a person are his imagination and experiences.
-        </div>
-        <!-- <p class="paragraph">
-          I have a good understanding of SOLID Principles, OOP, MVC, BEM, CDD.
-        </p> -->
-
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary">Frontend</h3>
-            <ul class="list">
-              <li class="list__item">Typescript, React, Redux, Hooks & Context API</li>
-              <li class="list__item">HTML, CSS, SASS, Vanilla JS, Jquery, Ajax, Bootstrap</li>
-              <li class="list__item">
-                Bootstrap, Materialize, Semantic-ui and similar Front-End libraries
-              </li>
-            </ul>
-          </div>
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary">Backend</h3>
-            <ul class="list">
-              <li class="list__item">Typescript, Node.js, Restful Services</li>
-              <li class="list__item">Mysql, Mongodb</li>
-              <li class="list__item">PHP, LARAVEL, Eloquent ORM</li>
-              <li class="list__item">Socket.io, Mqtt, Firebase</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary">Software Tools & Services</h3>
-            <ul class="list">
-              <li class="list__item">Git SCM, NPM, COMPOSER, VS CODE, POSTMAN</li>
-              <li class="list__item">Linux servers, CPANEL, Heroku, Netlify, GCP</li>
-              <li class="list__item">Star UML</li>
-              <li class="list__item">Linux & Windows</li>
-            </ul>
-          </div>
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary">Extras</h3>
-            <ul class="list">
-              <li class="list__item">React Native, Flutter (Mobile Apps)</li>
-              <li class="list__item">
-                C, C++, Arduino, ESP8266, Raspberry Pi, IOT Communication
-              </li>
-              <li class="list__item">Mqtt Protocol</li>
-              <li class="list__item">AT Commands, Docklight, Serial Port Communication</li>
-              <li class="list__item">
-                Adobe Photoshop & InDesign, Corel Draw, Gimp, Fusion 360
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section section-experiences">
-        <h2 class="heading-secondary"><i class="im im-briefcase"></i>EXPERIENCES</h2>
-        <ul class="list">
-          <li class="list__item">
-            Netcom Inc
-            <span class="list__item--description"
-              >Front-end developer (Aug 2020 - Nov 2020)</span
-            >
-            <span class="list__item--description">
-              I have worked on "Online Examination System". Mainly I have used Reactjs,
-              tensorflow and laravel.
-            </span>
-          </li>
-          <li class="list__item">
-            Freelancer
-            <span class="list__item--description">Developer (Aug 2019 - Aug 2020)</span>
-            <span class="list__item--description">
-              I have developed small to medium web and mobile apps for my clients and personel
-              projects.
-            </span>
-          </li>
-          <li class="list__item">
-            ArgeRf Electronics Automation, Software & Defense
-            <span class="list__item--description"
-              >Full-Stack Developer (Sep 2018 - Aug 2019)</span
-            >
-            <span class="list__item--description">
-              Mainly I have worked on web applications which controls electronic devices using
-              Mqtt, Laravel and Angularjs. Beside these I have developed desktop, mobile and
-              device configurator and tester apps.
-            </span>
-          </li>
-          <li class="list__item">
-            ELA - English Language Activities
-            <span class="list__item--description"
-              >Part-time PHP Developer - (Jan 2017 - Mar 2018)</span
-            >
-            <span class="list__item--description"
-              >have developed "Educational Institution Management System" using PHP and Jquery
-              to help their business.
-            </span>
-          </li>
-        </ul>
-      </section>
-      <section class="section section-education">
-        <h2 class="heading-secondary"><i class="im im-ribbon"></i>EDUCATION</h2>
-        <ul class="list">
-          <li class="list__item">
-            KAYSERI Erciyes University - Computer Engineering
-            <span class="list__item--info">graduated in 2020</span>
-          </li>
-          <li class="list__item">
-            KRAKOW AGH University of Science - Computer Science
-            <span class="list__item--info">attended in 2015</span>
-          </li>
-          <li class="list__item">NİĞDE Yavuz Sultan Selim High School</li>
-        </ul>
-      </section>
-
-      <section class="section section-projects">
-        <h2 class="heading-secondary"><i class="im im-layer"></i>Projects</h2>
-        <ul class="list">
-          <li class="list__item">
-            Github Jobs Web Application
-            <span class="list__item--description">React App</span>
-            <span class="list__item--description"
-              ><a href="https://github-jobs-react-js.netlify.app/" target="_blank"
-                >https://github-jobs-react-js.netlify.app/</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            Covid19 Realtime Web Application
-            <span class="list__item--description">MERN Stack</span>
-            <span class="list__item--description"
-              ><a href="https://www.coronaworldwide.online" target="_blank"
-                >https://www.coronaworldwide.online</a
-              ></span
-            >
-            <span class="list__item--description"
-              ><a href="https://koronaturkiye.online" target="_blank"
-                >https://koronaturkiye.online</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            EczaChat Mobile Application
-            <span class="list__item--description">Developed with React Native</span>
-            <span class="list__item--description"
-              >Play Store
-              <a
-                href="https://play.google.com/store/apps/details?id=com.eczachatv1&hl=en"
-                target="_blank"
-                >https://play.google.com/store/apps/details?id=com.eczachatv1&hl=en</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            EczaChat Restful Api & Back-End
-            <span class="list__item--description"
-              >Nodejs, Expressjs, Mongodb, Heroku, Fcm, Nodemailer, Cheerio, OTP SMS used</span
-            >
-          </li>
-          <li class="list__item">
-            Greenhouse Remote Control & Management System + Admin Panel
-            <span class="list__item--description">Laravel, Angularjs, Mysql, Mqtt</span>
-            <span class="list__item--description"
-              >Url
-              <a href="http://serasistem.com" target="_blank">http://serasistem.com</a></span
-            >
-          </li>
-          <li class="list__item">
-            Yacht Remote Control System for Magnetic Door Locks
-            <span class="list__item--description">Laravel, Angularjs, Mysql, Mqtt</span>
-            <span class="list__item--description"
-              >Url <a href="http://dooriot.net" target="_blank">http://dooriot.net</a></span
-            >
-          </li>
-          <li class="list__item">
-            Remote Control and Monitoring for RF Energy Analyzers
-            <span class="list__item--description">Laravel, Angularjs, Mysql, Mqtt</span>
-            <span class="list__item--description"
-              >Url
-              <a href="http://enerjikontrol.net" target="_blank"
-                >http://enerjikontrol.net</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            Taksigoo Website & Management Panel
-            <span class="list__item--description">Laravel, Angularjs, Mysql, Fcm</span>
-            <span class="list__item--description"
-              >Url <a href="http://taksigoo.com" target="_blank">http://taksigoo.com</a></span
-            >
-          </li>
-          <li class="list__item">
-            Taksigoo Mobile Application
-            <span class="list__item--description">Developer with React Native</span>
-            <span class="list__item--description"
-              >Url
-              <a
-                href="https://play.google.com/store/apps/details?id=com.taksigoo&hl=en"
-                target="_blank"
-                >https://play.google.com/store/apps/details?id=com.taksigoo&hl=en</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            MQTT to RF & RF to MQTT for ESP8266 Module
-            <span class="list__item--description">C++, Serial Port Communication</span>
-          </li>
-          <li class="list__item">
-            Configuration Desktop Application for RF Hydroelectric Power Plants Devices
-            <span class="list__item--description"
-              >Chrome Application, Serial Port Communication</span
-            >
-          </li>
-          <li class="list__item">
-            Desktop Application for Data Logger Devices
-            <span class="list__item--description">Electronjs, Serial Port Communication</span>
-          </li>
-          <li class="list__item">
-            Remote Barrier Control Destop Application
-            <span class="list__item--description"
-              >Chrome Application, Serial Port Communication</span
-            >
-          </li>
-          <li class="list__item">
-            Website for Savotek Defense and Army Technologies
-            <span class="list__item--description"
-              >Url
-              <a href="https://www.savotek.com.tr" target="_blank"
-                >https://www.savotek.com.tr</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            Website Restoration & English Language Support for ArgeRf Electronics
-            <span class="list__item--description"
-              >Url
-              <a href="https://argebilisim.com.tr" target="_blank"
-                >https://argebilisim.com.tr</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            Educational Institution Web Application for ELA Language Activities
-            <span class="list__item--description"
-              >PHP, Mysql, Apache, Jquery, Ajax, Bootstrap</span
-            >
-          </li>
-          <li class="list__item">
-            Website & Admin Panel for ELA Language Activities
-            <span class="list__item--description"
-              >Url
-              <a href="https://eladilaktiviteleri.com" target="_blank"
-                >https://eladilaktiviteleri.com</a
-              ></span
-            >
-          </li>
-          <li class="list__item">
-            Veresiye Defterim
-            <span class="list__item--info">Personel Project</span>
-            <span class="list__item--description"
-              >Url
-              <a href="http://veresiyedefterim.16mb.com" target="_blank"
-                >http://veresiyedefterim.16mb.com</a
-              ></span
-            >
-          </li>
-        </ul>
-      </section>
-      <section class="section section-personal">
-        <h2 class="heading-secondary"><i class="im im-user-male"></i>PERSONEL INFORMATIONS</h2>
-        <div class="row">
-          <div class="col-1-of-2">
-            <table class="table">
-              <tbody>
-                <tr>
-                  <th>Birthday</th>
-                  <td>03/07/1994</td>
-                </tr>
-                <tr>
-                  <th>Nationality</th>
-                  <td>Turk</td>
-                </tr>
-                <tr>
-                  <th>Military Status</th>
-                  <td>Postponed(2022)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-1-of-2">
-            <table class="table">
-              <tbody>
-                <tr>
-                  <th>Mother Language</th>
-                  <td>Turkish</td>
-                </tr>
-                <tr>
-                  <th>Other Languages</th>
-                  <td>English</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-      <section class="section section-activities">
-        <h2 class="heading-secondary">
-          <i class="im im-certificate-o"></i>CERTIFICATES , ORGANIZATIONS & ACTIVITIES
-        </h2>
-        <ul class="list">
-          <li class="list__item">Google Cloud Onboard Ankara Recognition of Attendance</li>
-          <li class="list__item">Google Digital Entrepreneurship Training</li>
-          <li class="list__item">Akademik Bilişim - Linux 101 Training Certificate</li>
-          <li class="list__item">Occupational Health and Safety Training Certificate</li>
-          <li class="list__item">KAYMEK Diction and Oratory Certificate</li>
-          <li class="list__item">Road cycling for 1 year at Nigde Genclik Spor</li>
-          <li class="list__item">Gymnast for 1 year at Nigde Genclik Spor</li>
-          <li class="list__item">
-            Football Player at Elementary School Team for 4 years and won several cups
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <img src="./img/logo-square-blue.png" alt="Wisimple" class="footer__logo" />
     </footer>
+
+    <script>
+      // elements
+      const body = document.querySelector('body');
+      const ppContainer = document.querySelector('.profile-picture-container');
+      const cube = document.querySelector('.cube');
+
+      // objects
+      function sound(src) {
+        this.sound = document.createElement('audio');
+        this.sound.src = src;
+        this.sound.setAttribute('preload', 'auto');
+        this.sound.setAttribute('controls', 'none');
+        this.sound.volume = 0.2;
+        this.sound.style.display = 'none';
+        document.body.appendChild(this.sound);
+        this.play = function () {
+          this.sound.play();
+        };
+        this.stop = function () {
+          this.sound.pause();
+        };
+      }
+
+      // variables
+      const hoverSound = new sound('assets/sounds/hover.mp3');
+
+      // functions
+      function init() {
+        printMessage('Hello world!');
+        if (localStorage.getItem('theme') === 'dark') {
+          body.classList.add('theme-dark');
+        }
+      }
+
+      function onScroll() {
+        positionY = window.scrollY;
+        rotate(positionY / 1.5);
+      }
+
+      function rotate(position) {
+        let style = `transform: rotateY(-${position}deg);`;
+        if (window.innerWidth > 600) {
+          style += `bottom: -${position}px`;
+        }
+        cube.style = style;
+      }
+
+      function printMessage(msg) {
+        const msgArr = [];
+        for (let i = 0; i < msg.length; i++) {
+          msgArr.push(msg.charCodeAt(i).toString(2).padStart(8, 0));
+        }
+        console.log(...msgArr);
+      }
+
+      init();
+
+      // event listeners
+      ppContainer.addEventListener('click', () => {
+        localStorage.setItem('theme', body.classList.toggle('theme-dark') ? 'dark' : '');
+      });
+      document.addEventListener('scroll', onScroll);
+      const timelineItems = document.querySelectorAll('.timeline-item');
+
+      let lastAttr;
+      timelineItems.forEach((i) => {
+        i.addEventListener('mouseover', (e) => {
+          currentAttr = e.target.getAttribute('data-date');
+          if (e.target.classList[0] === 'timeline-item' && lastAttr !== currentAttr) {
+            hoverSound.play();
+            lastAttr = currentAttr;
+          }
+        });
+      });
+    </script>
   </body>
 </html>

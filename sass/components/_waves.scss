@@ -1,0 +1,84 @@
+@keyframes moveWave {
+  0% {
+    transform: translateX(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) scaleY(1);
+  }
+}
+
+.waves-container {
+  position: relative;
+  overflow: hidden;
+  height: 20rem;
+
+  &--footer {
+    transform: rotate(180deg);
+    height: 6rem;
+
+    & .waves-container__content {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.waves-container__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+}
+
+.wave-container {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-primary);
+
+  &--bottom {
+    z-index: -10;
+  }
+  &--middle {
+    opacity: 0.75;
+  }
+  &--top {
+    opacity: 0.5;
+    z-index: 10;
+  }
+}
+
+.wave {
+  position: absolute;
+  overflow: hidden;
+  height: 30%;
+  width: 200%;
+  bottom: -5px;
+  background-size: 50% 100%;
+  transform-origin: center bottom;
+
+  @include responsive(tablet) {
+    height: 35%;
+  }
+
+  &--bottom {
+    background-image: url(/assets/img/waves/bottom.png);
+    animation: moveWave 15s linear infinite;
+  }
+  &--middle {
+    background-image: url(/assets/img/waves/middle.png);
+    animation: moveWave 10s linear infinite;
+  }
+  &--top {
+    background-image: url(/assets/img/waves/top.png);
+    animation: moveWave 3s;
+    animation-delay: 1s;
+  }
+}
