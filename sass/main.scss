@@ -1,8 +1,13 @@
-@import 'fonts';
-@import 'base';
-@import 'common';
-@import 'flexbox';
-@import 'layout';
-@import 'components/waves';
-@import 'components/timeline';
-@import 'components/cube';
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extends";
+
+@import "reset/reset";
+@import "reset/typography";
+
+@import "layout/resume";
+
+@import "components/waves";
+@import "components/timeline";
+@import "components/cube";
+@import "components/education-list";

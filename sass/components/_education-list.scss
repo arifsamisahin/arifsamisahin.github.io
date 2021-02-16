@@ -1,0 +1,14 @@
+.education-list {
+  &__item {
+    border: 1px solid black;
+    padding: 0.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}

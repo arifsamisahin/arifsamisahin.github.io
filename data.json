@@ -1,0 +1,55 @@
+{
+  "name": "Arif Sami ŞAHİN",
+  "introduction": "I'm a software developer specializing in front-end. I've often worked as a full-stack developer during my career. I love to learn and can take responsibilities.",
+  "profilePhotoUrl": "",
+  "contacts": {
+    "email": "",
+    "github": ""
+  },
+  "experienceHistory": [
+    {
+      "companyName": "Freelancer",
+      "position": "Developer",
+      "startedAt": "",
+      "description": "I have been developing web apps for my clients."
+    },
+    {
+      "companyName": "ArgeRf Electronics Automation, Software & Defense",
+      "position": "Full-stack developer",
+      "startedAt": "",
+      "endedAt": "",
+      "companyWebsiteUrl": "https://www.argebilisim.com.tr/",
+      "description": "I have developed web, mobile and desktop apps which control IOT devices."
+    },
+    {
+      "companyName": "ELA Language Education Instituion",
+      "position": "PHP Developer",
+      "startedAt": "",
+      "endedAt": "",
+      "companyWebsiteUrl": "https://www.eladilaktiviteleri.com/",
+      "description": "I have developed Educational Institution Management System with LAMP stack."
+    },
+    {
+      "companyName": "Eria Technology",
+      "position": "Intern",
+      "startedAt": "",
+      "endedAt": "",
+      "companyWebsiteUrl": "https://eczatrend.com/",
+      "description": "I have worked as a software end-user tester and customer supporter also learned HTML & CSS."
+    }
+  ],
+  "educationHistory": [
+    {
+      "university": "Erciyes University",
+      "area": "Computer Engineering",
+      "logoUrl": "assets/img/eru.png",
+      "websiteUrl": "https://www.agh.edu.pl/"
+    },
+    {
+      "university": "Akademia Górniczo-Hutnicza",
+      "area": "Computer Science",
+      "logoUrl": "assets/img/agh.png",
+      "websiteUrl": "https://erciyes.edu.tr/"
+    }
+  ]
+}

@@ -239,13 +239,13 @@ ul {
     .wave {
       height: 35%; } }
   .wave--bottom {
-    background-image: url(/assets/img/waves/bottom.png);
+    background-image: url(/bottom.883d36c4.png);
     animation: moveWave 15s linear infinite; }
   .wave--middle {
-    background-image: url(/assets/img/waves/middle.png);
+    background-image: url(/middle.9beb1a1b.png);
     animation: moveWave 10s linear infinite; }
   .wave--top {
-    background-image: url(/assets/img/waves/top.png);
+    background-image: url(/top.01342a97.png);
     animation: moveWave 3s;
     animation-delay: 1s; }
 
@@ -364,3 +364,6 @@ ul {
   .eduaction-list__item img {
     height: 60px;
     width: 60px; }
+
+
+/*# sourceMappingURL=/main.c52e0fe2.css.map */

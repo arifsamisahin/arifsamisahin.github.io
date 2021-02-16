@@ -35,20 +35,21 @@
   }
 
   &__list {
-    @extend .list--non-styled;
+    list-style-type: none;
 
-    & a {
+    a {
       display: flex;
       align-items: center;
       padding: 0.4rem 0;
       font-size: 1.4rem;
+      text-decoration: none;
 
       @include responsive(tablet) {
         font-size: 1.6rem;
       }
 
       color: $color-text;
-      & img {
+      img {
         margin-right: 0.5rem;
       }
     }
@@ -84,9 +85,15 @@
 .section {
   margin-top: 2rem;
 
-  & > h2 {
+  h2 {
     display: flex;
     align-items: center;
     margin: 0.7rem 0;
+  }
+}
+
+.section-introduction {
+  p {
+    line-height: 1.5;
   }
 }

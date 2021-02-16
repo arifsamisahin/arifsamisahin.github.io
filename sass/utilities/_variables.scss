@@ -1,0 +1,30 @@
+$color-primary: #00b4db;
+$color-text: #222;
+
+:root {
+  --color-primary: #00b4db;
+  --color-secondary: #ad611d;
+
+  --radius: 4px;
+  --shadow: 0 0 10px rgba(32, 22, 22, 0.5);
+
+  --color-text: #2f2f2f;
+  --color-text-light: #586a7a;
+
+  --color-bg: #fff;
+}
+
+.theme-dark {
+  $color-primary: #ebd402;
+
+  --color-primary: #ebd402;
+  --color-secondary: #ad611d;
+
+  --radius: 4px;
+  --shadow: 0 0 10px rgba(32, 22, 22, 0.5);
+
+  --color-text: #ddd;
+  --color-text-light: #999;
+
+  --color-bg: #0e2438;
+}
