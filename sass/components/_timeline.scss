@@ -1,3 +1,10 @@
+@keyframes slide-down {
+  from {
+    transform: scale(0.8) translateY(-4rem);
+    opacity: 0;
+  }
+}
+
 .timeline {
   list-style-type: none;
 }
@@ -13,6 +20,10 @@ $margin-left: 8rem;
   margin-left: $margin-left;
   padding: $padding;
   @include backgroundHoverEffect;
+
+  animation: slide-down 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation-delay: calc(0.1s * var(--item-index));
+  transform-origin: left;
 
   // date content
   &::before {

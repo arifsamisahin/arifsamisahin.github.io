@@ -23,7 +23,6 @@
     </script>
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <style>
       /* cyrillic-ext */
@@ -328,7 +327,6 @@
         <div class="container">
           <header class="header">
             <div class="header__info-left">
-              <!-- <h1 data-splitting class="stagger-it">Ali Veli DeLI</h1> -->
               <h1 id="name"></h1>
               <ul class="header__list">
                 <li>
@@ -360,7 +358,7 @@
         <h2 data-splitting>Experiences</h2>
         <div class="row">
           <div class="col-8">
-            <ul class="timeline"></ul>
+            <ul class="timeline" data-splitting="items"></ul>
           </div>
           <div class="col-4 flex justify-center items-center">
             <div class="cube-container">
@@ -391,6 +389,10 @@
         <h2 data-splitting>Education</h2>
         <ul class="education-list"></ul>
       </section>
+
+      <div class="section section-technologies" data-scroll>
+        <h2 data-splitting>Technologies I Used</h2>
+      </div>
     </main>
 
     <footer class="footer">
@@ -411,6 +413,8 @@
     </footer>
 
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
     <script>
       var body = document.querySelector("body");
       var ppContainer = document.querySelector(".profile-picture-container");
