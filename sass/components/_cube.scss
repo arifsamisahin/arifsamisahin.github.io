@@ -51,6 +51,7 @@ $cube-size: 15rem;
 
     &--front {
       transform: translateZ($cube-size / 2) rotateY(0);
+      z-index: 20;
     }
     &--back {
       transform: translateZ(-$cube-size / 2) rotateY(180deg);

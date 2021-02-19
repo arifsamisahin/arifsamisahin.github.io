@@ -19,7 +19,11 @@
     transform: rotate(180deg);
     height: 6rem;
 
-    & .waves-container__content {
+    .wave-container {
+      background: var(--color-primary);
+    }
+
+    .waves-container__content {
       transform: rotate(180deg);
     }
   }
@@ -41,7 +45,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--color-primary);
+
+  background: linear-gradient(38deg, var(--color-primary), rgba(255, 255, 255, 0.4));
 
   &--bottom {
     z-index: -10;
@@ -80,5 +85,13 @@
     background-image: url(/assets/img/waves/top.png);
     animation: moveWave 3s;
     animation-delay: 1s;
+  }
+
+  &--bottom,
+  &--middle,
+  &--top {
+    @media print {
+      animation: none;
+    }
   }
 }

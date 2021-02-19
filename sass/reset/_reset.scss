@@ -16,6 +16,14 @@ body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 1.6rem;
   background-color: var(--color-bg);
+
+  @media print {
+    font-size: 11pt;
+  }
+}
+
+@page {
+  margin: 0;
 }
 
 /* width */

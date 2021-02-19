@@ -12,6 +12,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#0083b0" />
     <link rel="shortcut icon" href="assets/img/logo-square.png" />
     <link rel="apple-touch-icon" href="assets/img/logo-square.png" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156693608-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-156693608-1");
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <style>
       /* cyrillic-ext */
@@ -300,16 +312,6 @@
           U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156693608-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-156693608-1");
-    </script>
   </head>
   <body>
     <div class="waves-container">
@@ -326,6 +328,7 @@
         <div class="container">
           <header class="header">
             <div class="header__info-left">
+              <!-- <h1 data-splitting class="stagger-it">Ali Veli DeLI</h1> -->
               <h1 id="name"></h1>
               <ul class="header__list">
                 <li>
@@ -349,15 +352,12 @@
     </div>
 
     <main class="container">
-      <section class="section section-introduction">
+      <section class="section section-introduction" data-scroll>
         <p></p>
       </section>
 
-      <section class="section section-experiences">
-        <h2>
-          <span class="iconify" data-icon="icomoon-free:briefcase" data-inline="false"></span>
-          Experiences
-        </h2>
+      <section class="section section-experiences" data-scroll>
+        <h2 data-splitting>Experiences</h2>
         <div class="row">
           <div class="col-8">
             <ul class="timeline"></ul>
@@ -387,8 +387,8 @@
         </div>
       </section>
 
-      <section class="section section-education">
-        <h2>Education</h2>
+      <section class="section section-education" data-scroll>
+        <h2 data-splitting>Education</h2>
         <ul class="education-list"></ul>
       </section>
     </main>
@@ -410,52 +410,22 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>
-      // elements
       var body = document.querySelector("body");
       var ppContainer = document.querySelector(".profile-picture-container");
       var cube = document.querySelector(".cube");
 
-      // event listeners
       ppContainer.addEventListener("click", () => {
         localStorage.setItem("theme", body.classList.toggle("theme-dark") ? "dark" : "");
       });
 
       document.addEventListener("scroll", onPageScroll);
-      var timelineItems = document.querySelectorAll(".timeline-item");
-
-      var lastAttr;
-      timelineItems.forEach((i) => {
-        i.addEventListener("mouseover", (e) => {
-          currentAttr = e.target.getAttribute("data-date");
-          if (e.target.classList[0] === "timeline-item" && lastAttr !== currentAttr) {
-            hoverSound.play();
-            lastAttr = currentAttr;
-          }
-        });
-      });
-
-      var hoverSound = new sound("assets/sounds/hover.mp3");
-      function sound(src) {
-        this.sound = document.createElement("audio");
-        this.sound.src = src;
-        this.sound.setAttribute("preload", "auto");
-        this.sound.setAttribute("controls", "none");
-        this.sound.volume = 0.2;
-        this.sound.style.display = "none";
-        document.body.appendChild(this.sound);
-        this.play = function () {
-          this.sound.play();
-        };
-        this.stop = function () {
-          this.sound.pause();
-        };
-      }
 
       function onPageScroll() {
         positionY = window.scrollY;
 
-        let style = `transform: rotateY(-${positionY / 1.5}deg);`;
+        var style = `transform: rotateY(-${positionY / 1.5}deg);`;
         if (window.innerWidth > 600) {
           style += `bottom: -${positionY / 1.5}px`;
         }
@@ -498,25 +468,29 @@
           nameElem.innerHTML = data.name;
           intoductionElem.innerHTML = data.introduction;
 
-          data.experienceHistory.forEach((experience) => {
+          data.experienceHistory.forEach(function (experience) {
             experienceElem.insertAdjacentHTML(
               "beforeend",
-              `<li class="timeline-item" data-date="Sep 2017">
-                <span>${experience.position} <small>(4 months)</small></span>
+              `<li class="timeline-item" data-date="${experience.startedAt}">
+                <span>${experience.position} ${
+                experience.duration ? `<small>(${experience.duration})</small>` : ""
+              }</span>
                 <h4>
-                  <a href="${experience.companyWebsiteUrl}" target="_blank" rel="noreferrer noopener">${experience.companyName}</a>
+                  <a href="${experience.companyWebsiteUrl}" target="_blank" rel="noreferrer noopener">${
+                experience.companyName
+              }</a>
                 </h4>
                 <p>${experience.description}</p>
               </li>`
             );
           });
 
-          data.educationHistory.forEach((education) => {
+          data.educationHistory.forEach(function (education) {
             educationListElem.insertAdjacentHTML(
               "beforeend",
-              `<li class="eduaction-list__item">
+              `<li class="education-list__item">
                 <div class="flex items-center">
-                  <img src="${education.logoUrl}" alt="${education.university} Logo" width="60" height="60" class="mr-2" />
+                  <img src="${education.logoUrl}" alt="${education.university} Logo" width="60" height="60" />
                   <div>
                     <h4>
                       <a href="${education.websiteUrl}" target="_blank" rel="noreferrer noopener">${education.university}</a>
@@ -527,10 +501,12 @@
               </li>`
             );
           });
+          Splitting();
+          ScrollOut();
         });
       }
 
-      init();
+      document.addEventListener("DOMContentLoaded", init);
     </script>
   </body>
 </html>

@@ -13,6 +13,12 @@
 
   @include responsive(desktop-big) {
     max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  @media print {
+    max-width: 80%;
+    margin: 1rem auto;
   }
 }
 

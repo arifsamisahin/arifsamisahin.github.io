@@ -12,22 +12,7 @@ $margin-left: 8rem;
   border-left: $border-width solid var(--color-text-light);
   margin-left: $margin-left;
   padding: $padding;
-  background: linear-gradient(
-    45deg,
-    rgba($color-primary, 0.2) 0%,
-    var(--color-bg) 61%,
-    rgba($color-primary, 0.2) 80%,
-    var(--color-bg) 64%
-  );
-  background-position: -200rem;
-  background-size: 100% 10%;
-  background-repeat: no-repeat;
-  transition: background 0.4s ease-out;
-
-  &::before,
-  &::after {
-    transition: all 0.5s;
-  }
+  @include backgroundHoverEffect;
 
   // date content
   &::before {
@@ -57,12 +42,8 @@ $margin-left: 8rem;
   }
 
   &:hover {
-    background-position: 0;
-    background-size: 200% 100%;
-
     &::before {
       font-weight: 500;
-      background-image: linear-gradient(to left, rgba($color-primary, 0.1), var(--color-bg));
     }
 
     &::after {

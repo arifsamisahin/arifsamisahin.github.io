@@ -1,41 +1,51 @@
 {
   "name": "Arif Sami ŞAHİN",
-  "introduction": "I'm a software developer specializing in front-end. I've often worked as a full-stack developer during my career. I love to learn and can take responsibilities.",
+  "introduction": "I'm a software developer specializing in front-end. I've mostly developed web apps and their backends during my career. I love to learn and can take responsibilities.",
   "profilePhotoUrl": "",
   "contacts": {
-    "email": "",
-    "github": ""
+    "email": "arifsamisahin@gmail.com",
+    "githubUsername": "wisimple"
   },
   "experienceHistory": [
     {
       "companyName": "Freelancer",
       "position": "Developer",
-      "startedAt": "",
+      "startedAt": "Current",
+      "duration": "",
+      "companyWebsiteUrl": "https://www.arif.link/",
       "description": "I have been developing web apps for my clients."
+    },
+    {
+      "companyName": "Netcom Inc",
+      "position": "Frontend Developer",
+      "startedAt": "Aug 2020",
+      "duration": "3 months",
+      "companyWebsiteUrl": "https://www.arif.link/",
+      "description": "I have help their online examination software."
     },
     {
       "companyName": "ArgeRf Electronics Automation, Software & Defense",
       "position": "Full-stack developer",
-      "startedAt": "",
-      "endedAt": "",
+      "startedAt": "Aug 2018",
+      "duration": "1 year",
       "companyWebsiteUrl": "https://www.argebilisim.com.tr/",
-      "description": "I have developed web, mobile and desktop apps which control IOT devices."
+      "description": "I have contributed to the growth of the company by developing web, mobile and desktop apps which control IOT devices."
     },
     {
       "companyName": "ELA Language Education Instituion",
       "position": "PHP Developer",
-      "startedAt": "",
-      "endedAt": "",
+      "startedAt": "Jan 2018",
+      "duration": "7 months",
       "companyWebsiteUrl": "https://www.eladilaktiviteleri.com/",
-      "description": "I have developed Educational Institution Management System with LAMP stack."
+      "description": "I have developed Educational Institution Management System using LAMP stack."
     },
     {
       "companyName": "Eria Technology",
       "position": "Intern",
-      "startedAt": "",
-      "endedAt": "",
+      "startedAt": "Sep 2017",
+      "duration": "3 months",
       "companyWebsiteUrl": "https://eczatrend.com/",
-      "description": "I have worked as a software end-user tester and customer supporter also learned HTML & CSS."
+      "description": "I have worked as end-user tester and customer supporter. Also learned HTML, CSS & JS basics."
     }
   ],
   "educationHistory": [
@@ -43,13 +53,13 @@
       "university": "Erciyes University",
       "area": "Computer Engineering",
       "logoUrl": "assets/img/eru.png",
-      "websiteUrl": "https://www.agh.edu.pl/"
+      "websiteUrl": "https://erciyes.edu.tr/"
     },
     {
       "university": "Akademia Górniczo-Hutnicza",
       "area": "Computer Science",
       "logoUrl": "assets/img/agh.png",
-      "websiteUrl": "https://erciyes.edu.tr/"
+      "websiteUrl": "https://www.agh.edu.pl/"
     }
   ]
 }
