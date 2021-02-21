@@ -78,7 +78,8 @@
 }
 
 .section {
-  margin-top: 3rem;
+  margin-bottom: 3rem;
+
   h2 {
     transition: all 0.5s;
     display: flex;
@@ -91,7 +92,13 @@
     i {
       margin-right: 0.5rem;
       font-size: 0.9em;
+      font-weight: 500;
     }
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
   }
 }
 

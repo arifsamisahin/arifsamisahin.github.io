@@ -344,7 +344,6 @@
 
     <main class="container">
       <section class="section section-contact" data-scroll>
-        <h2 data-splitting><i class="ri-links-fill"></i> Contact & Links</h2>
         <ul id="contact-list"></ul>
       </section>
 
@@ -385,12 +384,25 @@
       </section>
 
       <section class="section section-education" data-scroll>
-        <h2 data-splitting><i class="ri-book-3-line"></i> Education</h2>
+        <h2 data-splitting><i class="ri-book-3-line"></i>Education</h2>
         <ul class="education-list"></ul>
       </section>
 
       <div class="section section-skills" data-scroll>
-        <h2 data-splitting><i class="ri-terminal-box-line"></i> Technical Skills</h2>
+        <h2 data-splitting><i class="ri-terminal-box-line"></i>Skills</h2>
+
+        <h3>Frontend</h3>
+        <marquee behavior="slider" direction="right">
+          <ul class="slider-list" id="skills-frontend"></ul>
+        </marquee>
+        <h3>Backend</h3>
+        <marquee behavior="slider" direction="left">
+          <ul class="slider-list" id="skills-backend"></ul>
+        </marquee>
+        <h3>Tools</h3>
+        <marquee behavior="slider" direction="right">
+          <ul class="slider-list" id="skills-tools"></ul>
+        </marquee>
       </div>
       <div class="section section-certificates" data-scroll>
         <h2 data-splitting><i class="ri-award-line"></i> Certifications</h2>
@@ -469,7 +481,7 @@
           };
           xhttp.open(
             "GET",
-            "https://api.github.com/repos/arifsamisahin/arifsamisahin.github.io/commits",
+            "https://api.github.com/repos/arifsamisahin/arifsamisahin.github.io/commits?per_page=1",
             true
           );
           xhttp.send();
@@ -484,12 +496,9 @@
 
         fetchData().then(function (data) {
           var intoductionElem = document.querySelector(".section-introduction p");
-          var educationListElem = document.querySelector(".education-list");
-          var experienceElem = document.querySelector(".timeline");
-          var contactListElem = document.querySelector("#contact-list");
-
           intoductionElem.innerHTML = data.introduction;
 
+          var experienceElem = document.querySelector(".timeline");
           data.experienceHistory.forEach(function (experience) {
             experienceElem.insertAdjacentHTML(
               "beforeend",
@@ -507,6 +516,7 @@
             );
           });
 
+          var educationListElem = document.querySelector(".education-list");
           data.educationHistory.forEach(function (education) {
             educationListElem.insertAdjacentHTML(
               "beforeend",
@@ -525,6 +535,7 @@
             );
           });
 
+          var contactListElem = document.querySelector("#contact-list");
           data.contacts.forEach(function (contact) {
             contactListElem.insertAdjacentHTML(
               "beforeend",
@@ -533,6 +544,34 @@
                   ><i class="${contact.icon}"></i>${contact.text}
                 </a>
               </li>`
+            );
+          });
+
+          var skilssListElem1 = document.querySelector("#skills-frontend");
+          data.skills.frontend.forEach(function (skill) {
+            skilssListElem1.insertAdjacentHTML(
+              "beforeend",
+              `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${skill.fileName}" alt="${
+                skill.text
+              } Svg" /> ${skill.text}</li>`
+            );
+          });
+          var skilssListElem2 = document.querySelector("#skills-backend");
+          data.skills.backend.forEach(function (skill) {
+            skilssListElem2.insertAdjacentHTML(
+              "beforeend",
+              `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${skill.fileName}" alt="${
+                skill.text
+              } Svg" /> ${skill.text}</li>`
+            );
+          });
+          var skilssListElem3 = document.querySelector("#skills-tools");
+          data.skills.tools.forEach(function (skill) {
+            skilssListElem3.insertAdjacentHTML(
+              "beforeend",
+              `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${skill.fileName}" alt="${
+                skill.text
+              } Svg" /> ${skill.text}</li>`
             );
           });
           Splitting();

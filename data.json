@@ -75,5 +75,26 @@
       "websiteUrl": "https://www.agh.edu.pl/",
       "description": "Attended at 2015 (Erasmus Student Mobility)"
     }
-  ]
+  ],
+  "skills": {
+    "frontend": [
+      { "fileName": "html.svg", "text": "HTML" },
+      { "fileName": "css.svg", "text": "CSS" },
+      { "fileName": "sass.svg", "text": "Sass" },
+      { "fileName": "javascript.svg", "text": "Javascript" },
+      { "fileName": "typescript.svg", "text": "Typescript" },
+      { "fileName": "reactjs.svg", "text": "Reactjs" },
+      { "fileName": "nextjs.svg", "text": "Nextjs" }
+    ],
+    "backend": [
+      { "fileName": "nodejs.svg", "text": "Nodejs" },
+      { "fileName": "express.svg", "text": "Expressjs" },
+      { "fileName": "nestjs.svg", "text": "Nestjs" },
+      { "fileName": "mongodb.svg", "text": "mongoDB" },
+      { "fileName": "javascript.svg", "text": "Javascript" },
+      { "fileName": "typescript.svg", "text": "Typescript" },
+      { "fileName": "laravel.svg", "text": "Laravel" }
+    ],
+    "tools": [{ "fileName": "github.svg", "text": "Github" }]
+  }
 }
