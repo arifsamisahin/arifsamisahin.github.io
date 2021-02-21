@@ -2,25 +2,37 @@
   "name": "Arif Sami ŞAHİN",
   "introduction": "I'm a software developer specializing in front-end. I've mostly developed web apps and their backends during my career. I love to learn and can take responsibilities.",
   "profilePhotoUrl": "",
-  "contacts": {
-    "email": "arifsamisahin@gmail.com",
-    "githubUsername": "wisimple"
-  },
-  "experienceHistory": [
+  "contacts": [
     {
-      "companyName": "Freelancer",
-      "position": "Developer",
-      "startedAt": "Current",
-      "duration": "",
-      "companyWebsiteUrl": "https://www.arif.link/",
-      "description": "I have been developing web apps for my clients."
+      "icon": "ri-mail-send-fill",
+      "text": "arifsamisahin@gmail.com",
+      "link": "mailto:arifsamisahin@gmail.com"
     },
+    {
+      "icon": "ri-phone-fill",
+      "text": "+90 545 325 15 71",
+      "link": "tel:+905453251571"
+    },
+    {
+      "icon": "ri-github-fill",
+      "text": "/wisimple",
+      "link": "https://github.com/wisimple",
+      "newTab": true
+    },
+    {
+      "icon": "ri-linkedin-box-fill",
+      "text": "/arifsamisahin",
+      "link": "https://www.linkedin.com/in/arifsamisahin/",
+      "newTab": true
+    }
+  ],
+  "experienceHistory": [
     {
       "companyName": "Netcom Inc",
       "position": "Frontend Developer",
       "startedAt": "Aug 2020",
       "duration": "3 months",
-      "companyWebsiteUrl": "https://www.arif.link/",
+      "companyWebsiteUrl": "https://www.netcom.com.tr/",
       "description": "I have help their online examination software."
     },
     {
@@ -51,15 +63,17 @@
   "educationHistory": [
     {
       "university": "Erciyes University",
-      "area": "Computer Engineering",
+      "department": "Computer Engineering",
       "logoUrl": "assets/img/eru.png",
-      "websiteUrl": "https://erciyes.edu.tr/"
+      "websiteUrl": "https://erciyes.edu.tr/",
+      "description": "Graduated at 2020"
     },
     {
       "university": "Akademia Górniczo-Hutnicza",
-      "area": "Computer Science",
+      "department": "Computer Science",
       "logoUrl": "assets/img/agh.png",
-      "websiteUrl": "https://www.agh.edu.pl/"
+      "websiteUrl": "https://www.agh.edu.pl/",
+      "description": "Attended at 2015 (Erasmus Student Mobility)"
     }
   ]
 }

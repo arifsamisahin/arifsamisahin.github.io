@@ -76,10 +76,16 @@
   &--bottom {
     background-image: url(/assets/img/waves/bottom.png);
     animation: moveWave 15s linear infinite;
+    @media print {
+      transform: translateX(-3%);
+    }
   }
   &--middle {
     background-image: url(/assets/img/waves/middle.png);
     animation: moveWave 10s linear infinite;
+    @media print {
+      transform: translateX(-5%);
+    }
   }
   &--top {
     background-image: url(/assets/img/waves/top.png);

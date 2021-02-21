@@ -25,9 +25,9 @@
   background: linear-gradient(
     45deg,
     rgba($color-primary, 0.2) 0%,
-    var(--color-bg) 61%,
+    rgba(255, 255, 255, 0.1) 61%,
     rgba($color-primary, 0.2) 80%,
-    var(--color-bg) 64%
+    rgba(255, 255, 255, 0.1) 64%
   );
   background-position: -200rem;
   background-size: 100% 10%;
@@ -45,7 +45,7 @@
 
     &::before {
       font-weight: 500;
-      background-image: linear-gradient(to left, rgba($color-primary, 0.1), var(--color-bg));
+      background-image: linear-gradient(to left, rgba($color-primary, 0.1), rgba(255, 255, 255, 0.1));
     }
   }
 }

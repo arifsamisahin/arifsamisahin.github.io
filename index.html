@@ -23,6 +23,7 @@
     </script>
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <style>
       /* cyrillic-ext */
@@ -327,19 +328,11 @@
         <div class="container">
           <header class="header">
             <div class="header__info-left">
-              <h1 id="name"></h1>
-              <ul class="header__list">
-                <li>
-                  <a href="mailto:arifsamisahin@gmail.com"
-                    ><img src="assets/svg/icon-email.svg" alt="Email Svg" /> arifsamisahin@gmail.com
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/wisimple" target="_blank" rel="noopener noreferrer"
-                    ><img src="assets/svg/icon-github.svg" alt="Github Svg" /> /wisimple
-                  </a>
-                </li>
-              </ul>
+              <h1>Arif Sami ŞAHİN</h1>
+              <h3>Software Developer</h3>
+              <small
+                ><i>Updated at: <span id="updated-at"></span> </i>
+              </small>
             </div>
             <div class="profile-picture-container">
               <img src="assets/img/profile.jpg" alt="Profile" height="140px" width="auto" />
@@ -350,17 +343,23 @@
     </div>
 
     <main class="container">
+      <section class="section section-contact" data-scroll>
+        <h2 data-splitting><i class="ri-links-fill"></i> Contact & Links</h2>
+        <ul id="contact-list"></ul>
+      </section>
+
       <section class="section section-introduction" data-scroll>
+        <h2 data-splitting><i class="ri-focus-3-line"></i> Summary</h2>
         <p></p>
       </section>
 
       <section class="section section-experiences" data-scroll>
-        <h2 data-splitting>Experiences</h2>
+        <h2 data-splitting><i class="ri-suitcase-line"></i> Experience</h2>
         <div class="row">
           <div class="col-8">
             <ul class="timeline" data-splitting="items"></ul>
           </div>
-          <div class="col-4 flex justify-center items-center">
+          <div class="col-4 flex justify-center items-center hide-on-print">
             <div class="cube-container">
               <div class="cube">
                 <div class="cube__face cube__face--front">
@@ -386,12 +385,15 @@
       </section>
 
       <section class="section section-education" data-scroll>
-        <h2 data-splitting>Education</h2>
+        <h2 data-splitting><i class="ri-book-3-line"></i> Education</h2>
         <ul class="education-list"></ul>
       </section>
 
-      <div class="section section-technologies" data-scroll>
-        <h2 data-splitting>Technologies I Used</h2>
+      <div class="section section-skills" data-scroll>
+        <h2 data-splitting><i class="ri-terminal-box-line"></i> Technical Skills</h2>
+      </div>
+      <div class="section section-certificates" data-scroll>
+        <h2 data-splitting><i class="ri-award-line"></i> Certifications</h2>
       </div>
     </main>
 
@@ -457,6 +459,23 @@
         });
       }
 
+      function fetchLastCommits() {
+        return new Promise(function (resolve, reject) {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              resolve(JSON.parse(xhttp.responseText));
+            }
+          };
+          xhttp.open(
+            "GET",
+            "https://api.github.com/repos/arifsamisahin/arifsamisahin.github.io/commits",
+            true
+          );
+          xhttp.send();
+        });
+      }
+
       function init() {
         printMessage("Hello world!");
         if (localStorage.getItem("theme") === "dark") {
@@ -464,12 +483,11 @@
         }
 
         fetchData().then(function (data) {
-          var nameElem = document.querySelector("#name");
           var intoductionElem = document.querySelector(".section-introduction p");
           var educationListElem = document.querySelector(".education-list");
           var experienceElem = document.querySelector(".timeline");
+          var contactListElem = document.querySelector("#contact-list");
 
-          nameElem.innerHTML = data.name;
           intoductionElem.innerHTML = data.introduction;
 
           data.experienceHistory.forEach(function (experience) {
@@ -496,17 +514,36 @@
                 <div class="flex items-center">
                   <img src="${education.logoUrl}" alt="${education.university} Logo" width="60" height="60" />
                   <div>
+                   <small>${education.description}</small>
                     <h4>
                       <a href="${education.websiteUrl}" target="_blank" rel="noreferrer noopener">${education.university}</a>
                     </h4>
-                    <span>${education.area}</span>
+                    <span>${education.department}</span>
                   </div>
                 </div>
               </li>`
             );
           });
+
+          data.contacts.forEach(function (contact) {
+            contactListElem.insertAdjacentHTML(
+              "beforeend",
+              `<li>
+                <a href="${contact.link}" ${contact.newTab ? `target="_blank" rel="noopener noreferrer"` : ""}
+                  ><i class="${contact.icon}"></i>${contact.text}
+                </a>
+              </li>`
+            );
+          });
           Splitting();
           ScrollOut();
+        });
+
+        fetchLastCommits().then(function (r) {
+          var date = r[0].commit.committer.date;
+          date = new Date(date).toLocaleDateString();
+
+          document.querySelector("#updated-at").innerHTML = date;
         });
       }
 
