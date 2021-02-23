@@ -1,5 +1,11 @@
 .cert-list {
+  margin-left: 1rem;
   li {
     margin-bottom: 1rem;
+
+    &::before {
+      content: "-";
+      padding-right: 0.5rem;
+    }
   }
 }

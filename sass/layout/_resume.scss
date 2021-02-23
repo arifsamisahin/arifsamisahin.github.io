@@ -84,6 +84,10 @@
   }
 }
 
+.footer {
+  margin-top: 4rem;
+}
+
 .footer-logo {
   position: absolute;
   bottom: 20%;
@@ -100,7 +104,7 @@
     transition: all 0.5s;
     display: flex;
     align-items: center;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     font-size: 2.2rem;
     color: var(--color-primary);
     transform: skewX(-10deg);
@@ -120,11 +124,8 @@
     text-transform: capitalize;
 
     &::before {
-      content: "\ea6e";
-      font-family: "remixicon";
-
-      // top: 50%;
-      // transform: translateY(-50%);
+      content: ">";
+      padding-right: 0.5rem;
     }
   }
 }
@@ -135,13 +136,21 @@
   }
 }
 
+.section-education,
+.section-projects {
+  page-break-before: always;
+
+  @media print {
+    margin-top: 1.3cm;
+  }
+}
+
 .section-contact {
   ul {
-    background-color: rgba(0, 0, 0, 0.02);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border-radius: var(--radius);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     li {
       @include backgroundHoverEffect;

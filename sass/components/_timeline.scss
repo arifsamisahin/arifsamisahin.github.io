@@ -1,12 +1,8 @@
-@keyframes slide-down {
+@keyframes move-down {
   from {
     transform: scale(0.8) translateY(-4rem);
     opacity: 0;
   }
-}
-
-.timeline {
-  list-style-type: none;
 }
 
 $border-width: 0.2rem;
@@ -16,12 +12,12 @@ $margin-left: 8rem;
 
 .timeline-item {
   position: relative;
-  border-left: $border-width solid var(--color-text-light);
+  border-left: $border-width solid rgba(0, 0, 0, 0.5);
   margin-left: $margin-left;
   padding: $padding;
   @include backgroundHoverEffect;
 
-  animation: slide-down 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: move-down 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
   animation-delay: calc(0.1s * var(--item-index));
   transform-origin: left;
 
@@ -68,8 +64,13 @@ $margin-left: 8rem;
     }
   }
 
+  h4 {
+    margin: 0.3rem 0;
+  }
+
   p {
     color: var(--color-text-light);
+    font-size: 1.4rem;
   }
 
   span {
@@ -79,6 +80,6 @@ $margin-left: 8rem;
   }
 
   &:last-child {
-    border-image: linear-gradient(to bottom, var(--color-text-light) 60%, var(--color-bg)) 1 100%;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 60%, var(--color-bg)) 1 100%;
   }
 }

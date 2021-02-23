@@ -26,6 +26,16 @@ body {
   margin: 0;
 }
 
+@page:right {
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: "My book";
+    font-size: 9pt;
+    color: #333;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

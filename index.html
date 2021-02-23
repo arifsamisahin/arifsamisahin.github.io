@@ -10,8 +10,8 @@
     <meta name="author" content="Arif Sami ŞAHİN" />
     <meta name="msapplication-navbutton-color" content="#0083b0" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#0083b0" />
-    <link rel="shortcut icon" href="assets/img/logo-square.png" />
-    <link rel="apple-touch-icon" href="assets/img/logo-square.png" />
+    <link rel="shortcut icon" href="assets/img/logo-square-blue.png" />
+    <link rel="apple-touch-icon" href="assets/img/logo-square-blue.png" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156693608-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -387,10 +387,13 @@
       </section>
 
       <div class="section section-skills" data-scroll>
-        <div class="bg-image-container">
+        <div class="bg-image-container hide-on-print">
           <img src="assets/svg/typescript.svg" alt="Typescript SVG" />
         </div>
         <h2 data-splitting><i class="ri-terminal-box-line"></i>Skills</h2>
+      </div>
+      <div class="section section-projects" data-scroll>
+        <h2 data-splitting><i class="ri-terminal-window-line"></i> Projects</h2>
       </div>
       <div class="section section-certificates" data-scroll>
         <h2 data-splitting><i class="ri-award-line"></i> Certifications & Activities</h2>
@@ -540,18 +543,24 @@
           var skilssElem = document.querySelector(".section-skills");
 
           Object.keys(data.skills).forEach(function (key) {
-            skilssElem.insertAdjacentHTML("beforeend", `<h3>${key}</h3>`);
+            var skill = data.skills[key];
+
+            skilssElem.insertAdjacentHTML(
+              "beforeend",
+              `<h3>${key}</h3>
+              <p>${skill.description}</p>`
+            );
 
             var list = document.createElement("ul");
             list.className = "tech-list";
             skilssElem.appendChild(list);
 
-            data.skills[key].forEach(function (skill) {
+            skill.technologies.forEach(function (tech) {
               list.insertAdjacentHTML(
                 "beforeend",
-                `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${
-                  skill.fileName
-                }" alt="${skill.text} Svg" /> ${skill.text}</li>`
+                `<li ${tech.featured ? `class="featured"` : ""}><img src="assets/svg/${tech.fileName}" alt="${
+                  tech.text
+                } Icon" /> <span>${tech.text}</span></li>`
               );
             });
           });

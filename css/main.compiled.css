@@ -140,6 +140,14 @@ body {
 @page {
   margin: 0; }
 
+@page :right {
+  @bottom-left {
+    margin: 10pt 0 30pt 0;
+    border-top: 0.25pt solid #666;
+    content: "My book";
+    font-size: 9pt;
+    color: #333; } }
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px; }
@@ -225,7 +233,8 @@ ul {
   transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
   @media print {
     [data-scroll] {
-      opacity: 1; } }
+      opacity: 1;
+      transform: none; } }
 
 [data-scroll="in"] {
   opacity: 1;
@@ -312,6 +321,9 @@ ul {
     height: 14rem;
     vertical-align: middle; }
 
+.footer {
+  margin-top: 4rem; }
+
 .footer-logo {
   position: absolute;
   bottom: 20%;
@@ -326,7 +338,7 @@ ul {
     transition: all 0.5s;
     display: flex;
     align-items: center;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
     font-size: 2.2rem;
     color: var(--color-primary);
     transform: skewX(-10deg); }
@@ -341,18 +353,25 @@ ul {
     margin: 1rem 0;
     text-transform: capitalize; }
     .section h3::before {
-      content: "\ea6e";
-      font-family: "remixicon"; }
+      content: ">";
+      padding-right: 0.5rem; }
 
 .section-introduction p {
   line-height: 1.5; }
 
+.section-education,
+.section-projects {
+  page-break-before: always; }
+  @media print {
+    .section-education,
+    .section-projects {
+      margin-top: 1.3cm; } }
+
 .section-contact ul {
-  background-color: rgba(0, 0, 0, 0.02);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: var(--radius); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .section-contact ul li {
     background: linear-gradient(45deg, rgba(0, 180, 219, 0.2) 0%, rgba(255, 255, 255, 0.1) 61%, rgba(0, 180, 219, 0.2) 80%, rgba(255, 255, 255, 0.1) 64%);
     background-position: -200rem;
@@ -474,17 +493,14 @@ ul {
     .wave--bottom, .wave--middle, .wave--top {
       animation: none; } }
 
-@keyframes slide-down {
+@keyframes move-down {
   from {
     transform: scale(0.8) translateY(-4rem);
     opacity: 0; } }
 
-.timeline {
-  list-style-type: none; }
-
 .timeline-item {
   position: relative;
-  border-left: 0.2rem solid var(--color-text-light);
+  border-left: 0.2rem solid rgba(0, 0, 0, 0.5);
   margin-left: 8rem;
   padding: 2rem;
   background: linear-gradient(45deg, rgba(0, 180, 219, 0.2) 0%, rgba(255, 255, 255, 0.1) 61%, rgba(0, 180, 219, 0.2) 80%, rgba(255, 255, 255, 0.1) 64%);
@@ -492,7 +508,7 @@ ul {
   background-size: 100% 10%;
   background-repeat: no-repeat;
   transition: background 0.4s ease-out;
-  animation: slide-down 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation: move-down 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
   animation-delay: calc(0.1s * var(--item-index));
   transform-origin: left; }
   .timeline-item::before, .timeline-item::after {
@@ -533,12 +549,15 @@ ul {
     left: -1.14rem;
     background-color: var(--color-primary);
     transform: rotateZ(225deg); }
+  .timeline-item h4 {
+    margin: 0.3rem 0; }
   .timeline-item p {
-    color: var(--color-text-light); }
+    color: var(--color-text-light);
+    font-size: 1.4rem; }
   .timeline-item span small {
     color: var(--color-text-light); }
   .timeline-item:last-child {
-    border-image: linear-gradient(to bottom, var(--color-text-light) 60%, var(--color-bg)) 1 100%; }
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 60%, var(--color-bg)) 1 100%; }
 
 @keyframes rotateCube {
   from {
@@ -609,8 +628,8 @@ ul {
       background-image: linear-gradient(to left, rgba(0, 180, 219, 0.1), rgba(255, 255, 255, 0.1)); }
   .education-list__item img {
     margin-right: 1.5rem;
-    height: 60px;
-    width: 60px; }
+    height: 50px;
+    width: 50px; }
   .education-list__item small {
     color: var(--color-text-light); }
 
@@ -630,7 +649,10 @@ ul {
     transition: all 0.4s; }
     .tech-list li:hover {
       box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5); }
+      .tech-list li:hover img {
+        transform: scale(1.1); }
     .tech-list li img {
+      transition: all 0.5s ease-in-out;
       margin-right: 1rem;
       height: 4rem;
       border-radius: 10px;
@@ -650,5 +672,10 @@ ul {
       font-size: 10rem;
       z-index: -5; }
 
-.cert-list li {
-  margin-bottom: 1rem; }
+.cert-list {
+  margin-left: 1rem; }
+  .cert-list li {
+    margin-bottom: 1rem; }
+    .cert-list li::before {
+      content: "-";
+      padding-right: 0.5rem; }
