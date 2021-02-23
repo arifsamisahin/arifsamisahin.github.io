@@ -22,6 +22,22 @@
   }
 }
 
+.bg-image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  z-index: -20;
+
+  img {
+    width: 90vh;
+    height: 90vh;
+    border-radius: 20px;
+    transition: all 1s;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -97,8 +113,19 @@
   }
 
   h3 {
+    position: relative;
     font-size: 1.8rem;
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
+    margin: 1rem 0;
+    text-transform: capitalize;
+
+    &::before {
+      content: "\ea6e";
+      font-family: "remixicon";
+
+      // top: 50%;
+      // transform: translateY(-50%);
+    }
   }
 }
 

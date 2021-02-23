@@ -81,20 +81,43 @@
       { "fileName": "html.svg", "text": "HTML" },
       { "fileName": "css.svg", "text": "CSS" },
       { "fileName": "sass.svg", "text": "Sass" },
+      { "fileName": "bootstrap-5.svg", "text": "Bootstrap" },
+      { "fileName": "semantic-ui.svg", "text": "Semantic UI" },
+      { "fileName": "jquery.svg", "text": "Jquery" },
       { "fileName": "javascript.svg", "text": "Javascript" },
       { "fileName": "typescript.svg", "text": "Typescript" },
       { "fileName": "reactjs.svg", "text": "Reactjs" },
-      { "fileName": "nextjs.svg", "text": "Nextjs" }
+      { "fileName": "redux.svg", "text": "Redux" },
+      { "fileName": "nextjs.svg", "text": "Nextjs" },
+      { "fileName": "electron.svg", "text": "Electron" }
     ],
     "backend": [
+      { "fileName": "typescript.svg", "text": "Typescript" },
       { "fileName": "nodejs.svg", "text": "Nodejs" },
       { "fileName": "express.svg", "text": "Expressjs" },
       { "fileName": "nestjs.svg", "text": "Nestjs" },
+      { "fileName": "laravel.svg", "text": "Laravel" },
       { "fileName": "mongodb.svg", "text": "mongoDB" },
-      { "fileName": "javascript.svg", "text": "Javascript" },
-      { "fileName": "typescript.svg", "text": "Typescript" },
-      { "fileName": "laravel.svg", "text": "Laravel" }
+      { "fileName": "mysql.svg", "text": "Mysql" },
+      { "fileName": "redis.svg", "text": "Redis" },
+      { "fileName": "socket-io.svg", "text": "Socket.io" },
+      { "fileName": "firebase.svg", "text": "Firebase" }
     ],
-    "tools": [{ "fileName": "github.svg", "text": "Github" }]
-  }
+    "tools": [
+      { "fileName": "git.svg", "text": "Git" },
+      { "fileName": "npm.svg", "text": "Npm" },
+      { "fileName": "google-cloud.svg", "text": "Google Cloud" },
+      { "fileName": "vs-code.svg", "text": "VS Code" }
+    ]
+  },
+  "certifications": [
+    { "title": "Google Cloud Onboard Ankara Recognition of Attendance" },
+    { "title": "Google Digital Entrepreneurship Training" },
+    { "title": "Akademik Bilişim - Linux 101 Training Certificate" },
+    { "title": "Occupational Health and Safety Training Certificate" },
+    { "title": "KAYMEK Diction and Oratory Certificate" },
+    { "title": "IEEE membership" },
+    { "title": "Cyclist for 1 year at Nigde Genclik Spor" },
+    { "title": "Football Player at Elementary School Team for 4 years and won several cups" }
+  ]
 }

@@ -21,8 +21,6 @@
       gtag("js", new Date());
       gtag("config", "UA-156693608-1");
     </script>
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <style>
@@ -389,23 +387,14 @@
       </section>
 
       <div class="section section-skills" data-scroll>
+        <div class="bg-image-container">
+          <img src="assets/svg/typescript.svg" alt="Typescript SVG" />
+        </div>
         <h2 data-splitting><i class="ri-terminal-box-line"></i>Skills</h2>
-
-        <h3>Frontend</h3>
-        <marquee behavior="slider" direction="right">
-          <ul class="slider-list" id="skills-frontend"></ul>
-        </marquee>
-        <h3>Backend</h3>
-        <marquee behavior="slider" direction="left">
-          <ul class="slider-list" id="skills-backend"></ul>
-        </marquee>
-        <h3>Tools</h3>
-        <marquee behavior="slider" direction="right">
-          <ul class="slider-list" id="skills-tools"></ul>
-        </marquee>
       </div>
       <div class="section section-certificates" data-scroll>
-        <h2 data-splitting><i class="ri-award-line"></i> Certifications</h2>
+        <h2 data-splitting><i class="ri-award-line"></i> Certifications & Activities</h2>
+        <ul class="cert-list"></ul>
       </div>
     </main>
 
@@ -433,6 +422,7 @@
       var body = document.querySelector("body");
       var ppContainer = document.querySelector(".profile-picture-container");
       var cube = document.querySelector(".cube");
+      var bgImage = document.querySelector(".bg-image-container img");
 
       ppContainer.addEventListener("click", () => {
         localStorage.setItem("theme", body.classList.toggle("theme-dark") ? "dark" : "");
@@ -547,33 +537,36 @@
             );
           });
 
-          var skilssListElem1 = document.querySelector("#skills-frontend");
-          data.skills.frontend.forEach(function (skill) {
-            skilssListElem1.insertAdjacentHTML(
-              "beforeend",
-              `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${skill.fileName}" alt="${
-                skill.text
-              } Svg" /> ${skill.text}</li>`
-            );
+          var skilssElem = document.querySelector(".section-skills");
+
+          Object.keys(data.skills).forEach(function (key) {
+            skilssElem.insertAdjacentHTML("beforeend", `<h3>${key}</h3>`);
+
+            var list = document.createElement("ul");
+            list.className = "tech-list";
+            skilssElem.appendChild(list);
+
+            data.skills[key].forEach(function (skill) {
+              list.insertAdjacentHTML(
+                "beforeend",
+                `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${
+                  skill.fileName
+                }" alt="${skill.text} Svg" /> ${skill.text}</li>`
+              );
+            });
           });
-          var skilssListElem2 = document.querySelector("#skills-backend");
-          data.skills.backend.forEach(function (skill) {
-            skilssListElem2.insertAdjacentHTML(
-              "beforeend",
-              `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${skill.fileName}" alt="${
-                skill.text
-              } Svg" /> ${skill.text}</li>`
-            );
+
+          skilssElem.addEventListener("mouseover", function (e) {
+            if (e.target && e.target.matches("li")) {
+              bgImage.src = e.target.children[0].src;
+            }
           });
-          var skilssListElem3 = document.querySelector("#skills-tools");
-          data.skills.tools.forEach(function (skill) {
-            skilssListElem3.insertAdjacentHTML(
-              "beforeend",
-              `<li ${skill.featured ? `class="featured"` : ""}><img src="assets/svg/${skill.fileName}" alt="${
-                skill.text
-              } Svg" /> ${skill.text}</li>`
-            );
+
+          var certElem = document.querySelector(".cert-list");
+          data.certifications.forEach(function (cert) {
+            certElem.insertAdjacentHTML("beforeend", `<li>${cert.title}</li>`);
           });
+
           Splitting();
           ScrollOut();
         });
