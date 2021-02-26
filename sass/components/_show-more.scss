@@ -1,0 +1,46 @@
+.show-more-wrapper {
+  position: relative;
+
+  .show-on-print {
+    display: none;
+
+    @media print {
+      display: block;
+    }
+  }
+
+  .button,
+  .show-on-print {
+    position: absolute;
+    z-index: 5;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .fade {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--color-bg) 75%);
+    height: 20rem;
+    margin-top: -15rem;
+  }
+}
+
+.show-more-panel {
+  position: relative;
+  max-height: 30rem;
+  overflow-y: hidden;
+  transition: max-height 0.5s ease;
+
+  @media print {
+    max-height: 90rem;
+  }
+
+  &.show {
+    max-height: 200rem;
+
+    & ~ .fade {
+      background: transparent;
+    }
+  }
+}

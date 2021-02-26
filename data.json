@@ -124,67 +124,82 @@
   },
   "projects": [
     {
-      "name": "Dhesap Finance Web App",
+      "name": "Dhesap (Web App & Backend)",
+      "description": "Money management app which tracks current accounts and exprenses. It's still under development.",
       "logoUrl": "https://www.dhesap.com/favicon-196.png",
       "url": "https://www.dhesap.com",
-      "technologies": ["Typescript", "React", "Redux", "Sass"]
+      "technologies": ["Typescript", "React", "Redux", "Sass", "Nestjs", "MongoDB"]
     },
     {
-      "name": "Dhesap Restful Api",
-      "logoUrl": "https://www.dhesap.com/favicon-196.png",
-      "technologies": ["Typescript", "Nestjs", "MongoDB"]
-    },
-    {
-      "name": "qSinav Online Examination System",
+      "name": "qSinav",
+      "description": "Online examination system for universities and educational institutions. I have developed rest api, use cases and interactive exam screens.",
       "logoUrl": "https://qsinav.com/assets/img/ico.fw.ico",
       "url": "https://www.qsinav.com",
-      "technologies": ["Laravel", "React", "Redux", "Semantic UI", "MySQL"]
+      "technologies": ["Laravel", "React", "Redux", "Semantic UI", "MySQL", "Tensorflow"]
     },
     {
-      "name": "Covid19 Realtime Web App",
+      "name": "Covid19",
+      "description": "Realtime web app which shows worldwide covid19 informations.",
       "url": "https://www.coronaworldwide.online",
       "logoUrl": "https://www.coronaworldwide.online/apple-touch-icon.png",
       "technologies": ["React", "Redux", "Semantic UI", "Nodejs", "Expressjs", "MongoDB", "Socket.io", "FCM"]
     },
     {
-      "name": "EczaChat Mobile App",
+      "name": "EczaChat (Mobile App & Backend)",
+      "description": "Pharmacists and their employees can text with each other. They get notifications from their related branches. Backend includes restful api & web scraper for 54 different websites.",
       "url": "https://play.google.com/store/apps/details?id=com.eczachatv1",
       "logoUrl": "assets/img/projects/eczachat.webp",
-      "technologies": ["React Native"]
+      "technologies": [
+        "React Native",
+        "Nodejs",
+        "Expressjs",
+        "MongoDB",
+        "FCM",
+        "Sms Service",
+        "Nodemailer",
+        "Cheerio"
+      ]
     },
+
     {
-      "name": "EczaChat Backend",
-      "logoUrl": "assets/img/projects/eczachat.webp",
-      "technologies": ["Nodejs", "Expressjs", "MongoDB", "FCM", "OTP Sms Service", "Nodemailer", "Cheerio"]
-    },
-    {
-      "name": "Sera Sistem Web App",
+      "name": "Sera Sistem",
+      "description": "Web app that remotely controls and monitors greenhouses, users can control greenhouse windows, get temprature, humidity & wind speed. Also there is management panel for admins and branches.",
       "url": "http://www.serasistem.com",
       "logoUrl": "assets/img/projects/serasistem.png",
       "technologies": ["Laravel", "Angularjs", "Mqtt", "EMQ Broker", "MySQL"]
     },
     {
-      "name": "Dooriot Sistem Web App",
+      "name": "Dooriot",
+      "description": "Web app which users controls their Yatch's magnetic door locks.",
       "logoUrl": "assets/img/projects/dooriot.webp",
       "technologies": ["Laravel", "Angularjs", "Mqtt", "EMQ Broker", "MySQL"]
     },
 
     {
-      "name": "TaksiGoo Web App for Managers",
+      "name": "Taksigoo (Mobile & Web App)",
+      "description": "Taxi drivers get notifications from passengers via IOT devices on mobile app. Taxi station managers manages all devices and taxi drivers on web app.",
       "logoUrl": "assets/img/projects/taksigoo.png",
       "url": "https://www.taksigoo.com",
-      "technologies": ["Laravel", "Angularjs", "FCM", "MySQL"]
+      "technologies": ["React Native", "Laravel", "Angularjs", "FCM", "MySQL"]
     },
+
     {
-      "name": "TaksiGoo Mobile App for Drivers",
-      "logoUrl": "assets/img/projects/taksigoo.png",
-      "url": "https://play.google.com/store/apps/details?id=com.taksigoo",
-      "technologies": ["React Native"]
-    },
-    {
-      "name": "Enerji Konrtol Web App",
+      "name": "Enerji Konrtol",
+      "description": "Energy analyzers can be controlled and monitered remotely.",
       "url": "https://enerjikontrol.net",
       "technologies": ["Laravel", "Angularjs", "Mqtt", "Mosquitto Broker"]
+    },
+    {
+      "name": "Data Logger",
+      "description": "Desktop app that fetches data from data logger devices via serial port and visualize them.",
+      "url": "https://www.argebilisim.com.tr/product-details?device=DL-1",
+      "logoUrl": "assets/img/projects/data-logger.png",
+      "technologies": ["Electronjs", "JS", "Serial Port Communication"]
+    },
+    {
+      "name": "Boom Barrier Controller",
+      "description": "Chrome app that users control barriers via serial port communication.",
+      "technologies": ["Chrome App", "JS", "Serial Port Communication"]
     }
   ],
   "certifications": [

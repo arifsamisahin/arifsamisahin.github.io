@@ -400,7 +400,16 @@
       </div>
       <div class="section section-projects" data-scroll>
         <h2 data-splitting><i class="ri-terminal-window-line"></i> Projects</h2>
-        <ul class="project-list"></ul>
+        <div class="show-more-wrapper">
+          <p class="show-on-print">
+            To see all please visit
+            <a href="https://arifsamisahin.github.io">https://www.arifsamisahin.github.io</a>
+          </p>
+          <button class="button button--outline hide-on-print" id="toggle-projects">Show more</button>
+
+          <ul class="project-list show-more-panel"></ul>
+          <div class="fade"></div>
+        </div>
       </div>
       <div class="section section-certificates" data-scroll>
         <h2 data-splitting><i class="ri-award-line"></i> Certifications & Activities</h2>
@@ -436,6 +445,12 @@
 
       ppContainer.addEventListener("click", () => {
         localStorage.setItem("theme", body.classList.toggle("theme-dark") ? "dark" : "");
+      });
+
+      var toggleProjectsButton = document.getElementById("toggle-projects");
+      toggleProjectsButton.addEventListener("click", function () {
+        var isVisible = this.nextElementSibling.classList.toggle("show");
+        this.innerText = `Show ${isVisible ? " less" : " more"}`;
       });
 
       document.addEventListener("scroll", onPageScroll);
@@ -522,7 +537,7 @@
               "beforeend",
               `<li class="education-list__item">
                 <div class="flex items-center">
-                  <img src="${education.logoUrl}" alt="${education.university} Logo" width="60" height="60" />
+                  <img src="${education.logoUrl}" alt="${education.university} Logo" width="60" height="60" loading="lazy" />
                   <div>
                    <small>${education.description}</small>
                     <h4>
@@ -567,7 +582,7 @@
                 "beforeend",
                 `<li ${tech.featured ? `class="featured"` : ""}><img src="assets/svg/${tech.fileName}" alt="${
                   tech.text
-                } Icon" /> <span>${tech.text}</span></li>`
+                } Icon" loading="lazy" /> <span>${tech.text}</span></li>`
               );
             });
           });
@@ -592,7 +607,7 @@
                 <div class="avatar">
                   <img src="${project.logoUrl ? project.logoUrl : "assets/img/no-image.ico"}" alt="${
                 project.name
-              }" />
+              }" loading="lazy" />
                 </div>
                 <div>
                   <h4>${project.name}</h4>
@@ -601,6 +616,7 @@
                       ? `<a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.url}</a>`
                       : ""
                   }
+                  ${project.description ? `<p>${project.description}</p>` : ""}
                   <ul>${technologies}</ul>
                 </div>
               </li>`
