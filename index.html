@@ -387,13 +387,20 @@
       </section>
 
       <div class="section section-skills" data-scroll>
-        <div class="bg-image-container hide-on-print">
-          <img src="assets/svg/typescript.svg" alt="Typescript SVG" />
-        </div>
+        <img
+          id="bg-tech-image"
+          class="hide-on-print"
+          src="assets/svg/typescript.svg"
+          alt="Background Tech"
+          height="100px"
+          width="100px"
+        />
+
         <h2 data-splitting><i class="ri-terminal-box-line"></i>Skills</h2>
       </div>
       <div class="section section-projects" data-scroll>
         <h2 data-splitting><i class="ri-terminal-window-line"></i> Projects</h2>
+        <ul class="project-list"></ul>
       </div>
       <div class="section section-certificates" data-scroll>
         <h2 data-splitting><i class="ri-award-line"></i> Certifications & Activities</h2>
@@ -425,7 +432,7 @@
       var body = document.querySelector("body");
       var ppContainer = document.querySelector(".profile-picture-container");
       var cube = document.querySelector(".cube");
-      var bgImage = document.querySelector(".bg-image-container img");
+      var bgImage = document.querySelector("#bg-tech-image");
 
       ppContainer.addEventListener("click", () => {
         localStorage.setItem("theme", body.classList.toggle("theme-dark") ? "dark" : "");
@@ -569,6 +576,35 @@
             if (e.target && e.target.matches("li")) {
               bgImage.src = e.target.children[0].src;
             }
+          });
+
+          var projectsListElem = document.querySelector(".project-list");
+          data.projects.forEach(function (project) {
+            var technologies = "";
+
+            project.technologies.forEach(function (tech) {
+              technologies += `<li>${tech}</li>`;
+            });
+
+            projectsListElem.insertAdjacentHTML(
+              "beforeend",
+              `<li>
+                <div class="avatar">
+                  <img src="${project.logoUrl ? project.logoUrl : "assets/img/no-image.ico"}" alt="${
+                project.name
+              }" />
+                </div>
+                <div>
+                  <h4>${project.name}</h4>
+                  ${
+                    project.url
+                      ? `<a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.url}</a>`
+                      : ""
+                  }
+                  <ul>${technologies}</ul>
+                </div>
+              </li>`
+            );
           });
 
           var certElem = document.querySelector(".cert-list");

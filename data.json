@@ -78,7 +78,7 @@
   ],
   "skills": {
     "frontend": {
-      "description": "I can design pixel perfect user interfaces or develop with css frameworks.",
+      "description": "I can design pixel perfect user interfaces, use css frameworks, consume rest apis.",
       "technologies": [
         { "fileName": "html.svg", "text": "HTML" },
         { "fileName": "css.svg", "text": "CSS" },
@@ -96,7 +96,7 @@
       ]
     },
     "backend": {
-      "description": "",
+      "description": "I can design rest apis from stratch.",
       "technologies": [
         { "fileName": "typescript.svg", "text": "Typescript" },
         { "fileName": "nodejs.svg", "text": "Nodejs" },
@@ -122,6 +122,71 @@
       ]
     }
   },
+  "projects": [
+    {
+      "name": "Dhesap Finance Web App",
+      "logoUrl": "https://www.dhesap.com/favicon-196.png",
+      "url": "https://www.dhesap.com",
+      "technologies": ["Typescript", "React", "Redux", "Sass"]
+    },
+    {
+      "name": "Dhesap Restful Api",
+      "logoUrl": "https://www.dhesap.com/favicon-196.png",
+      "technologies": ["Typescript", "Nestjs", "MongoDB"]
+    },
+    {
+      "name": "qSinav Online Examination System",
+      "logoUrl": "https://qsinav.com/assets/img/ico.fw.ico",
+      "url": "https://www.qsinav.com",
+      "technologies": ["Laravel", "React", "Redux", "Semantic UI", "MySQL"]
+    },
+    {
+      "name": "Covid19 Realtime Web App",
+      "url": "https://www.coronaworldwide.online",
+      "logoUrl": "https://www.coronaworldwide.online/apple-touch-icon.png",
+      "technologies": ["React", "Redux", "Semantic UI", "Nodejs", "Expressjs", "MongoDB", "Socket.io", "FCM"]
+    },
+    {
+      "name": "EczaChat Mobile App",
+      "url": "https://play.google.com/store/apps/details?id=com.eczachatv1",
+      "logoUrl": "assets/img/projects/eczachat.webp",
+      "technologies": ["React Native"]
+    },
+    {
+      "name": "EczaChat Backend",
+      "logoUrl": "assets/img/projects/eczachat.webp",
+      "technologies": ["Nodejs", "Expressjs", "MongoDB", "FCM", "OTP Sms Service", "Nodemailer", "Cheerio"]
+    },
+    {
+      "name": "Sera Sistem Web App",
+      "url": "http://www.serasistem.com",
+      "logoUrl": "assets/img/projects/serasistem.png",
+      "technologies": ["Laravel", "Angularjs", "Mqtt", "EMQ Broker", "MySQL"]
+    },
+    {
+      "name": "Dooriot Sistem Web App",
+      "logoUrl": "assets/img/projects/dooriot.webp",
+      "technologies": ["Laravel", "Angularjs", "Mqtt", "EMQ Broker", "MySQL"]
+    },
+
+    {
+      "name": "TaksiGoo Web App for Managers",
+      "logoUrl": "assets/img/projects/taksigoo.png",
+      "url": "https://www.taksigoo.com",
+      "technologies": ["Laravel", "Angularjs", "FCM", "MySQL"]
+    },
+    {
+      "name": "TaksiGoo Mobile App for Drivers",
+      "logoUrl": "assets/img/projects/taksigoo.png",
+      "url": "https://play.google.com/store/apps/details?id=com.taksigoo",
+      "technologies": ["React Native"]
+    },
+    {
+      "name": "Enerji Konrtol Web App",
+      "url": "https://enerjikontrol.net",
+      "technologies": ["Laravel", "Angularjs", "Mqtt", "Mosquitto Broker"]
+    }
+  ],
   "certifications": [
     { "title": "Google Cloud Onboard Ankara Recognition of Attendance" },
     { "title": "Google Digital Entrepreneurship Training" },
