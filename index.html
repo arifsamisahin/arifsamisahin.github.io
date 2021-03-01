@@ -401,10 +401,9 @@
       <div class="section section-projects" data-scroll>
         <h2 data-splitting><i class="ri-terminal-window-line"></i> Projects</h2>
         <div class="show-more-wrapper">
-          <p class="show-on-print">
-            To see all please visit
-            <a href="https://arifsamisahin.github.io">https://www.arifsamisahin.github.io</a>
-          </p>
+          <a class="button button--outline show-on-print" href="https://arifsamisahin.github.io"
+            >See All Details</a
+          >
           <button class="button button--outline hide-on-print" id="toggle-projects">Show more</button>
 
           <ul class="project-list show-more-panel"></ul>
@@ -513,6 +512,18 @@
           var intoductionElem = document.querySelector(".section-introduction p");
           intoductionElem.innerHTML = data.introduction;
 
+          var contactListElem = document.querySelector("#contact-list");
+          data.contacts.forEach(function (contact) {
+            contactListElem.insertAdjacentHTML(
+              "beforeend",
+              `<li>
+                <a href="${contact.link}" ${contact.newTab ? `target="_blank" rel="noopener noreferrer"` : ""}
+                  ><i class="${contact.icon}"></i>${contact.text}
+                </a>
+              </li>`
+            );
+          });
+
           var experienceElem = document.querySelector(".timeline");
           data.experienceHistory.forEach(function (experience) {
             experienceElem.insertAdjacentHTML(
@@ -550,27 +561,14 @@
             );
           });
 
-          var contactListElem = document.querySelector("#contact-list");
-          data.contacts.forEach(function (contact) {
-            contactListElem.insertAdjacentHTML(
-              "beforeend",
-              `<li>
-                <a href="${contact.link}" ${contact.newTab ? `target="_blank" rel="noopener noreferrer"` : ""}
-                  ><i class="${contact.icon}"></i>${contact.text}
-                </a>
-              </li>`
-            );
-          });
-
           var skilssElem = document.querySelector(".section-skills");
-
           Object.keys(data.skills).forEach(function (key) {
             var skill = data.skills[key];
 
             skilssElem.insertAdjacentHTML(
               "beforeend",
               `<h3>${key}</h3>
-              <p>${skill.description}</p>`
+                ${skill.description ? `<p>${skill.description}</p>` : ""}`
             );
 
             var list = document.createElement("ul");

@@ -41,6 +41,7 @@
 
     & ~ .fade {
       background: transparent;
+      z-index: -5;
     }
   }
 }

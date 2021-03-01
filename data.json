@@ -78,7 +78,6 @@
   ],
   "skills": {
     "frontend": {
-      "description": "I can design pixel perfect user interfaces, use css frameworks, consume rest apis.",
       "technologies": [
         { "fileName": "html.svg", "text": "HTML" },
         { "fileName": "css.svg", "text": "CSS" },
@@ -96,7 +95,6 @@
       ]
     },
     "backend": {
-      "description": "I can design rest apis from stratch.",
       "technologies": [
         { "fileName": "typescript.svg", "text": "Typescript" },
         { "fileName": "nodejs.svg", "text": "Nodejs" },
@@ -105,13 +103,11 @@
         { "fileName": "laravel.svg", "text": "Laravel" },
         { "fileName": "mongodb.svg", "text": "mongoDB" },
         { "fileName": "mysql.svg", "text": "Mysql" },
-        { "fileName": "redis.svg", "text": "Redis" },
         { "fileName": "socket-io.svg", "text": "Socket.io" },
         { "fileName": "firebase.svg", "text": "Firebase" }
       ]
     },
     "tools": {
-      "description": "",
       "technologies": [
         { "fileName": "git.svg", "text": "Git" },
         { "fileName": "npm.svg", "text": "Npm" },
