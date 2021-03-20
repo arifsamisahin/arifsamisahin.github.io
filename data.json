@@ -41,7 +41,7 @@
       "startedAt": "Aug 2018",
       "duration": "1 year",
       "companyWebsiteUrl": "https://www.argebilisim.com.tr/",
-      "description": "I have contributed to the growth of the company by developing web, mobile and desktop apps which control IOT devices."
+      "description": "I have contributed to the growth of the company by developing web, mobile, and desktop apps that control IoT devices."
     },
     {
       "companyName": "ELA Language Education Instituion",
@@ -49,7 +49,7 @@
       "startedAt": "Jan 2018",
       "duration": "7 months",
       "companyWebsiteUrl": "https://www.eladilaktiviteleri.com/",
-      "description": "I have developed Educational Institution Management System using LAMP stack."
+      "description": "I have developed Educational Institution Management System using the LAMP stack."
     },
     {
       "companyName": "Eria Technology",
@@ -57,7 +57,7 @@
       "startedAt": "Sep 2017",
       "duration": "3 months",
       "companyWebsiteUrl": "https://eczatrend.com/",
-      "description": "I have worked as end-user tester and customer supporter. Also learned HTML, CSS & JS basics."
+      "description": "I have worked as an end-user tester and customer supporter. Also learned HTML, CSS & JS basics."
     }
   ],
   "educationHistory": [
@@ -128,7 +128,7 @@
     },
     {
       "name": "qSinav",
-      "description": "Online examination system for universities and educational institutions. I have developed rest api, use cases and interactive exam screens.",
+      "description": "Online examination system for universities and educational institutions. I have developed rest API, use cases, and interactive exam screens.",
       "logoUrl": "https://qsinav.com/assets/img/ico.fw.ico",
       "url": "https://www.qsinav.com",
       "technologies": ["Laravel", "React", "Redux", "Semantic UI", "MySQL", "Tensorflow"]
