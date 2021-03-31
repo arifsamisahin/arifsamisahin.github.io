@@ -136,8 +136,8 @@
     {
       "name": "Covid19",
       "description": "Realtime web app which shows worldwide covid19 informations.",
-      "url": "https://www.coronaworldwide.online",
-      "logoUrl": "https://www.coronaworldwide.online/apple-touch-icon.png",
+      "url": "https://coronaworldwide.netlify.app",
+      "logoUrl": "https://coronaworldwide.netlify.app/apple-touch-icon.png",
       "technologies": ["React", "Redux", "Semantic UI", "Nodejs", "Expressjs", "MongoDB", "Socket.io", "FCM"]
     },
     {
@@ -145,16 +145,7 @@
       "description": "Pharmacists and their employees can text with each other. They get notifications from their related branches. Backend includes restful api & web scraper for 54 different websites.",
       "url": "https://play.google.com/store/apps/details?id=com.eczachatv1",
       "logoUrl": "assets/img/projects/eczachat.webp",
-      "technologies": [
-        "React Native",
-        "Nodejs",
-        "Expressjs",
-        "MongoDB",
-        "FCM",
-        "Sms Service",
-        "Nodemailer",
-        "Cheerio"
-      ]
+      "technologies": ["React Native", "Nodejs", "Expressjs", "MongoDB", "FCM", "Sms Service", "Nodemailer", "Cheerio"]
     },
 
     {
