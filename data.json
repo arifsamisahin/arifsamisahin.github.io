@@ -1,202 +1,262 @@
 {
-  "name": "Arif Sami ŞAHİN",
-  "introduction": "I'm a software developer specializing in front-end. I've mostly developed web apps and their backends during my career. I love to learn and can take responsibilities.",
-  "profilePhotoUrl": "",
-  "contacts": [
-    {
-      "icon": "ri-mail-send-fill",
-      "text": "arifsamisahin@gmail.com",
-      "link": "mailto:arifsamisahin@gmail.com"
+    "name": "Arif Sami ŞAHİN",
+    "introduction": "I'm a software developer specializing in front-end. I've mostly developed web apps and their backends during my career. I love to learn and can take responsibilities.",
+    "profilePhotoUrl": "",
+    "contacts": [
+        {
+            "icon": "ri-mail-send-fill",
+            "text": "arifsamisahin@gmail.com",
+            "link": "mailto:arifsamisahin@gmail.com"
+        },
+        {
+            "icon": "ri-phone-fill",
+            "text": "+90 545 325 15 71",
+            "link": "tel:+905453251571"
+        },
+        {
+            "icon": "ri-github-fill",
+            "text": "/wisimple",
+            "link": "https://github.com/wisimple",
+            "newTab": true
+        },
+        {
+            "icon": "ri-linkedin-box-fill",
+            "text": "/arifsamisahin",
+            "link": "https://www.linkedin.com/in/arifsamisahin/",
+            "newTab": true
+        }
+    ],
+    "experienceHistory": [
+        {
+            "companyName": "Mortgage Finder",
+            "position": "Frontend Developer",
+            "startedAt": "May 2021",
+            "duration": "current",
+            "companyWebsiteUrl": "https://www.mortgagefinder.ae/",
+            "description": "Mortgage Finder is leading mortgage broker at Dubai. I'm mostly working with react typescript."
+        },
+        {
+            "companyName": "Netcom Inc",
+            "position": "Frontend Developer",
+            "startedAt": "Aug 2020",
+            "duration": "3 months",
+            "companyWebsiteUrl": "https://www.netcom.com.tr/",
+            "description": "I have help their online examination software."
+        },
+        {
+            "companyName": "ArgeRf Electronics Automation, Software & Defense",
+            "position": "Full-stack developer",
+            "startedAt": "Aug 2018",
+            "duration": "1 year",
+            "companyWebsiteUrl": "https://www.argebilisim.com.tr/",
+            "description": "I have contributed to the growth of the company by developing web, mobile, and desktop apps that control IoT devices."
+        },
+        {
+            "companyName": "ELA Language Education Instituion",
+            "position": "PHP Developer",
+            "startedAt": "Jan 2018",
+            "duration": "7 months",
+            "companyWebsiteUrl": "https://www.eladilaktiviteleri.com/",
+            "description": "I have developed Educational Institution Management System using the LAMP stack."
+        },
+        {
+            "companyName": "Eria Technology",
+            "position": "Intern",
+            "startedAt": "Sep 2017",
+            "duration": "3 months",
+            "companyWebsiteUrl": "https://eczatrend.com/",
+            "description": "I have worked as an end-user tester and customer supporter. Also learned HTML, CSS & JS basics."
+        }
+    ],
+    "educationHistory": [
+        {
+            "university": "Erciyes University",
+            "department": "Computer Engineering",
+            "logoUrl": "assets/img/eru.png",
+            "websiteUrl": "https://erciyes.edu.tr/",
+            "description": "Graduated at 2020"
+        },
+        {
+            "university": "Akademia Górniczo-Hutnicza",
+            "department": "Computer Science",
+            "logoUrl": "assets/img/agh.png",
+            "websiteUrl": "https://www.agh.edu.pl/",
+            "description": "Attended at 2015 (Erasmus Student Mobility)"
+        }
+    ],
+    "skills": {
+        "frontend": {
+            "technologies": [
+                { "fileName": "html.svg", "text": "HTML" },
+                { "fileName": "css.svg", "text": "CSS" },
+                { "fileName": "sass.svg", "text": "Sass" },
+                { "fileName": "bootstrap-5.svg", "text": "Bootstrap" },
+                { "fileName": "semantic-ui.svg", "text": "Semantic UI" },
+                { "fileName": "material-ui.svg", "text": "Material UI" },
+                { "fileName": "jquery.svg", "text": "Jquery" },
+                { "fileName": "javascript.svg", "text": "Javascript" },
+                { "fileName": "typescript.svg", "text": "Typescript" },
+                { "fileName": "reactjs.svg", "text": "Reactjs" },
+                { "fileName": "redux.svg", "text": "Redux" },
+                { "fileName": "nextjs.svg", "text": "Nextjs" },
+                { "fileName": "electron.svg", "text": "Electron" }
+            ]
+        },
+        "backend": {
+            "technologies": [
+                { "fileName": "typescript.svg", "text": "Typescript" },
+                { "fileName": "nodejs.svg", "text": "Nodejs" },
+                { "fileName": "express.svg", "text": "Expressjs" },
+                { "fileName": "nestjs.svg", "text": "Nestjs" },
+                { "fileName": "laravel.svg", "text": "Laravel" },
+                { "fileName": "mongodb.svg", "text": "mongoDB" },
+                { "fileName": "mysql.svg", "text": "Mysql" },
+                { "fileName": "socket-io.svg", "text": "Socket.io" },
+                { "fileName": "firebase.svg", "text": "Firebase" }
+            ]
+        },
+        "tools": {
+            "technologies": [
+                { "fileName": "git.svg", "text": "Git" },
+                { "fileName": "npm.svg", "text": "Npm" },
+                { "fileName": "google-cloud.svg", "text": "Google Cloud" },
+                { "fileName": "heroku.svg", "text": "Heroku" },
+                { "fileName": "netlify.svg", "text": "Netlify" },
+                { "fileName": "vs-code.svg", "text": "VS Code" }
+            ]
+        }
     },
-    {
-      "icon": "ri-phone-fill",
-      "text": "+90 545 325 15 71",
-      "link": "tel:+905453251571"
-    },
-    {
-      "icon": "ri-github-fill",
-      "text": "/wisimple",
-      "link": "https://github.com/wisimple",
-      "newTab": true
-    },
-    {
-      "icon": "ri-linkedin-box-fill",
-      "text": "/arifsamisahin",
-      "link": "https://www.linkedin.com/in/arifsamisahin/",
-      "newTab": true
-    }
-  ],
-  "experienceHistory": [
-    {
-      "companyName": "Netcom Inc",
-      "position": "Frontend Developer",
-      "startedAt": "Aug 2020",
-      "duration": "3 months",
-      "companyWebsiteUrl": "https://www.netcom.com.tr/",
-      "description": "I have help their online examination software."
-    },
-    {
-      "companyName": "ArgeRf Electronics Automation, Software & Defense",
-      "position": "Full-stack developer",
-      "startedAt": "Aug 2018",
-      "duration": "1 year",
-      "companyWebsiteUrl": "https://www.argebilisim.com.tr/",
-      "description": "I have contributed to the growth of the company by developing web, mobile, and desktop apps that control IoT devices."
-    },
-    {
-      "companyName": "ELA Language Education Instituion",
-      "position": "PHP Developer",
-      "startedAt": "Jan 2018",
-      "duration": "7 months",
-      "companyWebsiteUrl": "https://www.eladilaktiviteleri.com/",
-      "description": "I have developed Educational Institution Management System using the LAMP stack."
-    },
-    {
-      "companyName": "Eria Technology",
-      "position": "Intern",
-      "startedAt": "Sep 2017",
-      "duration": "3 months",
-      "companyWebsiteUrl": "https://eczatrend.com/",
-      "description": "I have worked as an end-user tester and customer supporter. Also learned HTML, CSS & JS basics."
-    }
-  ],
-  "educationHistory": [
-    {
-      "university": "Erciyes University",
-      "department": "Computer Engineering",
-      "logoUrl": "assets/img/eru.png",
-      "websiteUrl": "https://erciyes.edu.tr/",
-      "description": "Graduated at 2020"
-    },
-    {
-      "university": "Akademia Górniczo-Hutnicza",
-      "department": "Computer Science",
-      "logoUrl": "assets/img/agh.png",
-      "websiteUrl": "https://www.agh.edu.pl/",
-      "description": "Attended at 2015 (Erasmus Student Mobility)"
-    }
-  ],
-  "skills": {
-    "frontend": {
-      "technologies": [
-        { "fileName": "html.svg", "text": "HTML" },
-        { "fileName": "css.svg", "text": "CSS" },
-        { "fileName": "sass.svg", "text": "Sass" },
-        { "fileName": "bootstrap-5.svg", "text": "Bootstrap" },
-        { "fileName": "semantic-ui.svg", "text": "Semantic UI" },
-        { "fileName": "material-ui.svg", "text": "Material UI" },
-        { "fileName": "jquery.svg", "text": "Jquery" },
-        { "fileName": "javascript.svg", "text": "Javascript" },
-        { "fileName": "typescript.svg", "text": "Typescript" },
-        { "fileName": "reactjs.svg", "text": "Reactjs" },
-        { "fileName": "redux.svg", "text": "Redux" },
-        { "fileName": "nextjs.svg", "text": "Nextjs" },
-        { "fileName": "electron.svg", "text": "Electron" }
-      ]
-    },
-    "backend": {
-      "technologies": [
-        { "fileName": "typescript.svg", "text": "Typescript" },
-        { "fileName": "nodejs.svg", "text": "Nodejs" },
-        { "fileName": "express.svg", "text": "Expressjs" },
-        { "fileName": "nestjs.svg", "text": "Nestjs" },
-        { "fileName": "laravel.svg", "text": "Laravel" },
-        { "fileName": "mongodb.svg", "text": "mongoDB" },
-        { "fileName": "mysql.svg", "text": "Mysql" },
-        { "fileName": "socket-io.svg", "text": "Socket.io" },
-        { "fileName": "firebase.svg", "text": "Firebase" }
-      ]
-    },
-    "tools": {
-      "technologies": [
-        { "fileName": "git.svg", "text": "Git" },
-        { "fileName": "npm.svg", "text": "Npm" },
-        { "fileName": "google-cloud.svg", "text": "Google Cloud" },
-        { "fileName": "heroku.svg", "text": "Heroku" },
-        { "fileName": "netlify.svg", "text": "Netlify" },
-        { "fileName": "vs-code.svg", "text": "VS Code" }
-      ]
-    }
-  },
-  "projects": [
-    {
-      "name": "Dhesap (Web App & Backend)",
-      "description": "Money management app which tracks current accounts and exprenses. It's still under development.",
-      "logoUrl": "https://www.dhesap.com/favicon-196.png",
-      "url": "https://www.dhesap.com",
-      "technologies": ["Typescript", "React", "Redux", "Sass", "Nestjs", "MongoDB"]
-    },
-    {
-      "name": "qSinav",
-      "description": "Online examination system for universities and educational institutions. I have developed rest API, use cases, and interactive exam screens.",
-      "logoUrl": "https://qsinav.com/assets/img/ico.fw.ico",
-      "url": "https://www.qsinav.com",
-      "technologies": ["Laravel", "React", "Redux", "Semantic UI", "MySQL", "Tensorflow"]
-    },
-    {
-      "name": "Covid19",
-      "description": "Realtime web app which shows worldwide covid19 informations.",
-      "url": "https://coronaworldwide.netlify.app",
-      "logoUrl": "https://coronaworldwide.netlify.app/apple-touch-icon.png",
-      "technologies": ["React", "Redux", "Semantic UI", "Nodejs", "Expressjs", "MongoDB", "Socket.io", "FCM"]
-    },
-    {
-      "name": "EczaChat (Mobile App & Backend)",
-      "description": "Pharmacists and their employees can text with each other. They get notifications from their related branches. Backend includes restful api & web scraper for 54 different websites.",
-      "url": "https://play.google.com/store/apps/details?id=com.eczachatv1",
-      "logoUrl": "assets/img/projects/eczachat.webp",
-      "technologies": ["React Native", "Nodejs", "Expressjs", "MongoDB", "FCM", "Sms Service", "Nodemailer", "Cheerio"]
-    },
+    "projects": [
+        {
+            "name": "Dhesap (Web App & Backend)",
+            "description": "Money management app which tracks current accounts and exprenses. It's still under development.",
+            "logoUrl": "https://www.dhesap.com/favicon-196.png",
+            "url": "https://www.dhesap.com",
+            "technologies": [
+                "Typescript",
+                "React",
+                "Redux",
+                "Sass",
+                "Nestjs",
+                "MongoDB"
+            ]
+        },
+        {
+            "name": "qSinav",
+            "description": "Online examination system for universities and educational institutions. I have developed rest API, use cases, and interactive exam screens.",
+            "logoUrl": "https://qsinav.com/assets/img/ico.fw.ico",
+            "url": "https://www.qsinav.com",
+            "technologies": [
+                "Laravel",
+                "React",
+                "Redux",
+                "Semantic UI",
+                "MySQL",
+                "Tensorflow"
+            ]
+        },
+        {
+            "name": "Covid19",
+            "description": "Realtime web app which shows worldwide covid19 informations.",
+            "url": "https://coronaworldwide.netlify.app",
+            "logoUrl": "https://coronaworldwide.netlify.app/apple-touch-icon.png",
+            "technologies": [
+                "React",
+                "Redux",
+                "Semantic UI",
+                "Nodejs",
+                "Expressjs",
+                "MongoDB",
+                "Socket.io",
+                "FCM"
+            ]
+        },
+        {
+            "name": "EczaChat (Mobile App & Backend)",
+            "description": "Pharmacists and their employees can text with each other. They get notifications from their related branches. Backend includes restful api & web scraper for 54 different websites.",
+            "url": "https://play.google.com/store/apps/details?id=com.eczachatv1",
+            "logoUrl": "assets/img/projects/eczachat.webp",
+            "technologies": [
+                "React Native",
+                "Nodejs",
+                "Expressjs",
+                "MongoDB",
+                "FCM",
+                "Sms Service",
+                "Nodemailer",
+                "Cheerio"
+            ]
+        },
 
-    {
-      "name": "Sera Sistem",
-      "description": "Web app that remotely controls and monitors greenhouses, users can control greenhouse windows, get temprature, humidity & wind speed. Also there is management panel for admins and branches.",
-      "url": "http://www.serasistem.com",
-      "logoUrl": "assets/img/projects/serasistem.png",
-      "technologies": ["Laravel", "Angularjs", "Mqtt", "EMQ Broker", "MySQL"]
-    },
-    {
-      "name": "Dooriot",
-      "description": "Web app which users controls their Yatch's magnetic door locks.",
-      "logoUrl": "assets/img/projects/dooriot.webp",
-      "technologies": ["Laravel", "Angularjs", "Mqtt", "EMQ Broker", "MySQL"]
-    },
+        {
+            "name": "Sera Sistem",
+            "description": "Web app that remotely controls and monitors greenhouses, users can control greenhouse windows, get temprature, humidity & wind speed. Also there is management panel for admins and branches.",
+            "url": "http://www.serasistem.com",
+            "logoUrl": "assets/img/projects/serasistem.png",
+            "technologies": [
+                "Laravel",
+                "Angularjs",
+                "Mqtt",
+                "EMQ Broker",
+                "MySQL"
+            ]
+        },
+        {
+            "name": "Dooriot",
+            "description": "Web app which users controls their Yatch's magnetic door locks.",
+            "logoUrl": "assets/img/projects/dooriot.webp",
+            "technologies": [
+                "Laravel",
+                "Angularjs",
+                "Mqtt",
+                "EMQ Broker",
+                "MySQL"
+            ]
+        },
 
-    {
-      "name": "Taksigoo (Mobile & Web App)",
-      "description": "Taxi drivers get notifications from passengers via IOT devices on mobile app. Taxi station managers manages all devices and taxi drivers on web app.",
-      "logoUrl": "assets/img/projects/taksigoo.png",
-      "url": "https://www.taksigoo.com",
-      "technologies": ["React Native", "Laravel", "Angularjs", "FCM", "MySQL"]
-    },
+        {
+            "name": "Taksigoo (Mobile & Web App)",
+            "description": "Taxi drivers get notifications from passengers via IOT devices on mobile app. Taxi station managers manages all devices and taxi drivers on web app.",
+            "logoUrl": "assets/img/projects/taksigoo.png",
+            "url": "https://www.taksigoo.com",
+            "technologies": [
+                "React Native",
+                "Laravel",
+                "Angularjs",
+                "FCM",
+                "MySQL"
+            ]
+        },
 
-    {
-      "name": "Enerji Konrtol",
-      "description": "Energy analyzers can be controlled and monitered remotely.",
-      "url": "https://enerjikontrol.net",
-      "technologies": ["Laravel", "Angularjs", "Mqtt", "Mosquitto Broker"]
-    },
-    {
-      "name": "Data Logger",
-      "description": "Desktop app that fetches data from data logger devices via serial port and visualize them.",
-      "url": "https://www.argebilisim.com.tr/product-details?device=DL-1",
-      "logoUrl": "assets/img/projects/data-logger.png",
-      "technologies": ["Electronjs", "JS", "Serial Port Communication"]
-    },
-    {
-      "name": "Boom Barrier Controller",
-      "description": "Chrome app that users control barriers via serial port communication.",
-      "technologies": ["Chrome App", "JS", "Serial Port Communication"]
-    }
-  ],
-  "certifications": [
-    { "title": "Google Cloud Onboard Ankara Recognition of Attendance" },
-    { "title": "Google Digital Entrepreneurship Training" },
-    { "title": "Akademik Bilişim - Linux 101 Training Certificate" },
-    { "title": "Occupational Health and Safety Training Certificate" },
-    { "title": "KAYMEK Diction and Oratory Certificate" },
-    { "title": "IEEE membership" },
-    { "title": "Cyclist for 1 year at Nigde Genclik Spor" },
-    { "title": "Football Player at Elementary School Team for 4 years and won several cups" }
-  ]
+        {
+            "name": "Enerji Konrtol",
+            "description": "Energy analyzers can be controlled and monitered remotely.",
+            "url": "https://enerjikontrol.net",
+            "technologies": ["Laravel", "Angularjs", "Mqtt", "Mosquitto Broker"]
+        },
+        {
+            "name": "Data Logger",
+            "description": "Desktop app that fetches data from data logger devices via serial port and visualize them.",
+            "url": "https://www.argebilisim.com.tr/product-details?device=DL-1",
+            "logoUrl": "assets/img/projects/data-logger.png",
+            "technologies": ["Electronjs", "JS", "Serial Port Communication"]
+        },
+        {
+            "name": "Boom Barrier Controller",
+            "description": "Chrome app that users control barriers via serial port communication.",
+            "technologies": ["Chrome App", "JS", "Serial Port Communication"]
+        }
+    ],
+    "certifications": [
+        { "title": "Google Cloud Onboard Ankara Recognition of Attendance" },
+        { "title": "Google Digital Entrepreneurship Training" },
+        { "title": "Akademik Bilişim - Linux 101 Training Certificate" },
+        { "title": "Occupational Health and Safety Training Certificate" },
+        { "title": "KAYMEK Diction and Oratory Certificate" },
+        { "title": "IEEE membership" },
+        { "title": "Cyclist for 1 year at Nigde Genclik Spor" },
+        {
+            "title": "Football Player at Elementary School Team for 4 years and won several cups"
+        }
+    ]
 }
