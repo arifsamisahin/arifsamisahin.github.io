@@ -335,7 +335,7 @@
               <h1>Arif Sami ŞAHİN</h1>
               <h3>Software Developer</h3>
               <small
-                ><i>Updated at: <span id="updated-at"></span> </i>
+                ><i>Updated at: May 8, 2021 </i>
               </small>
             </div>
             <div class="profile-picture-container">
@@ -626,13 +626,6 @@
 
           Splitting();
           ScrollOut();
-        });
-
-        fetchLastCommits().then(function (r) {
-          var date = r[0].commit.committer.date;
-          date = new Date(date).toLocaleDateString();
-
-          document.querySelector("#updated-at").innerHTML = date;
         });
       }
 
