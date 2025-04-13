@@ -333,7 +333,7 @@
           <header class="header">
             <div class="header__info-left">
               <h1>Arif Sami ŞAHİN</h1>
-              <h3>Software Developer</h3>
+              <h3>Front-end Developer</h3>
               <small
                 ><i>Updated at: May 8, 2021 </i>
               </small>
@@ -405,7 +405,7 @@
         <h2 data-splitting><i class="ri-terminal-box-line"></i>Skills</h2>
       </section>
       <section class="section section-projects" data-scroll>
-        <h2 data-splitting><i class="ri-terminal-window-line"></i> Projects</h2>
+        <h2 data-splitting><i class="ri-terminal-window-line"></i> Projects I worked on</h2>
         <div class="show-more-wrapper">
           <a class="button button--outline show-on-print" href="https://arifsamisahin.github.io">See All Details</a>
           <button class="button button--outline hide-on-print" id="toggle-projects">Show more</button>
@@ -527,13 +527,9 @@
             experienceElem.insertAdjacentHTML(
               "beforeend",
               `<li class="timeline-item" data-date="${experience.startedAt}">
-                <span>${experience.position} ${
-                experience.duration ? `<small>(${experience.duration})</small>` : ""
-              }</span>
+                <span>${experience.position} ${experience.duration ? `<small>(${experience.duration})</small>` : ""}</span>
                 <h4>
-                  <a href="${experience.companyWebsiteUrl}" target="_blank" rel="noreferrer noopener">${
-                experience.companyName
-              }</a>
+                  <a href="${experience.companyWebsiteUrl}" target="_blank" rel="noreferrer noopener">${experience.companyName}</a>
                 </h4>
                 <p>${experience.description}</p>
               </li>`
